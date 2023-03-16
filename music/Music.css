@@ -4,9 +4,9 @@
 
 body {
     background-color: black;
+    font-family:  monospace;
     color: white;
-    font-family: monospace;
-}
+  }
 
 a:link {
     color: white;
