@@ -1,5 +1,14 @@
-.Topsense{
+.Topsense {
     text-align: center;
+}
+
+.year {
+    font-size: 35px;
+    text-align: center;
+}
+
+.AlbumDetails {
+    text-align: center
 }
 
 body {
