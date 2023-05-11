@@ -1,21 +1,26 @@
-.container {
+body{
+    font-family:"Arial";
+    background-color:black;
+    background-repeat:repeat;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .title_container {
     box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     height: 35px;
     width: 170px;
     border: 2px solid white;
     position: absolute;
     top: 2%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.title {
+    transform: translateX(-50%);
     font-size: 25px;
     color: white;
-    font-weight:bold;
-    font-family:"Times";
-    letter-spacing:3px;
+    font-weight: bold;
+    font-family: "Times";
+    letter-spacing: 3px;
     text-align: center;
-}
+  }
