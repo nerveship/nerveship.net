@@ -1,0 +1,4 @@
+function hello_world() 
+{
+    alert("HELLO USER, I'M TESTING THINGS. DO NOT WORRY IF IT'S BUGGY OR NOT WORKING RIGHT NOW!");
+}

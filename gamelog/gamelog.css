@@ -9,6 +9,10 @@ body{
     overflow: hidden;
   }
 
+.table {
+  color:white;
+}
+
 .header {
     font-size: 35px;
     color: white;
