@@ -1,0 +1,15 @@
+body{
+    font-family:"Arial";
+    background-image:url("images/cool\ green.png");
+    background-position:center;
+    background-attachment:fixed;
+    background-color:black;
+    background-size:cover;
+    background-repeat:repeat;
+    overflow: hidden;
+  }
+
+.header {
+    font-size: 35px;
+    color: white;
+}
