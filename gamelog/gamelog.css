@@ -14,7 +14,7 @@
   }
 
   .table-container {
-    width: 90%;
+    width: 92.5%;
     overflow-x: auto; /* Enable horizontal scrolling */
     display: flex;
     justify-content: center;
