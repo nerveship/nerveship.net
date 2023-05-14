@@ -23,7 +23,7 @@ body {
 .table {
   border: 1px solid white;
   width: 100%; /* Adjust the width as needed */
-  max-width: 1150px; /* Set a maximum width for the table */
+  max-width: 1350px; /* Set a maximum width for the table */
   border-collapse: collapse;
   color: white;
   position: relative; /* Change to relative to make it stay within the container */
