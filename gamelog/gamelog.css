@@ -1,6 +1,9 @@
+html {
+  font-family:'Times New Roman', Times, serif
+}
+
 body{
     font-family:"Arial";
-    background-image:url("images/cool\ green.png");
     background-position:center;
     background-attachment:fixed;
     background-color:black;
@@ -10,10 +13,73 @@ body{
   }
 
 .table {
-  color:white;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    position: absolute;
+  }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.thead th:nth-child(1) {
+  width: 5%;
+}
+
+.thead th:nth-child(2) {
+  width: 50%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 5%;
+}
+
+th,
+td {
+  padding: 20px;
 }
 
 .header {
-    font-size: 35px;
-    color: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 35px;
+  width: 950px;
+  border: 2px solid white;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  font-family: "Times";
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* typography */
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
 }
