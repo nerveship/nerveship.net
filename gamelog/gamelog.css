@@ -20,6 +20,10 @@ body {
   align-items: center;
 }
 
+a:visited {
+  color: red;
+}
+
 .table {
   border: 1px solid white;
   width: 100%; /* Adjust the width as needed */
