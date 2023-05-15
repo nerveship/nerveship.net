@@ -32,7 +32,7 @@ a:visited {
   color: white;
   position: relative; /* Change to relative to make it stay within the container */
   text-align: center;
-  margin: 3% auto; /* Adjust the margins as needed */
+  margin-top: 100px;
 }
 
 th,
@@ -48,7 +48,7 @@ td {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 35px;
+  height: 57px;
   width: 950px;
   border: 2px solid white;
   position: absolute;
@@ -61,7 +61,7 @@ td {
   font-family: "Times";
   letter-spacing: 3px;
   text-align: center;
-  padding-bottom: 19px;
+  padding-bottom: 35px;
 }
 
 .thead th {
@@ -85,4 +85,11 @@ tbody td {
 
 tfoot th {
   text-align: right;
+}
+
+.return {
+  color:white;
+  font-size: 25px;
+  margin-top: 55px;
+  margin-left: 550px;
 }
