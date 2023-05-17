@@ -13,7 +13,7 @@ body {
 }
 
 .table-container {
-  width: 99.5%;
+  width: 99.5;
   overflow-x: auto;
   display: flex;
   justify-content: center;
