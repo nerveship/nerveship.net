@@ -21,7 +21,11 @@ body {
 }
 
 a:visited {
-  color: red;
+  color: #00cc00;
+}
+
+a {
+  color: #00cc00;
 }
 
 .table {
@@ -46,6 +50,19 @@ td {
   word-wrap: break-word;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #00cc00;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #009900;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #66ff99;
+}
+
 .header {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,7 +74,7 @@ td {
   top: 2%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 25px;
+  font-size: 23px;
   color: white;
   font-weight: bold;
   font-family: "Times";
