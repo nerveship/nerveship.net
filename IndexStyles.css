@@ -15,8 +15,8 @@ body{
     box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
-    height: 900px;
-    width: 900px;
+    height: 760px;
+    width: 760px;
     border: 2px solid black;
     position: absolute;
     top: 47%;
@@ -39,23 +39,25 @@ a:active  { color: inherit; text-decoration: none;}
   color:white;
   font-weight:bold;
   font-family:"Times";
-  letter-spacing:-2px;
+  letter-spacing:10px;
   background-image:url("images/town.webp");
+  -webkit-text-stroke: 1px black;
   background-position:center;
   background-attachment:fixed;
   font-size:50px;
     text-align: center;
     vertical-align: middle;
-    line-height: 300px;    
+    line-height: 240px;    
     border: 3px solid black;
     position:absolute;
     top:0px;
-    left:200px;
-    width: 699px;
-    height: 300px;
+    left:150px;
+    width: 607px;
+    height: 225px;
 }
 
 .left{
+  -webkit-text-stroke: 1px black;
   box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -65,7 +67,7 @@ a:active  { color: inherit; text-decoration: none;}
   color:white;
   font-weight:bold;
   font-family:"Times";
-  letter-spacing:15px;
+  letter-spacing:20px;
   background-image:url("images/cool-sphere.webp");
   background-position:center;
   background-attachment:fixed;
@@ -79,8 +81,8 @@ a:active  { color: inherit; text-decoration: none;}
     position:absolute;
     top:0px;
     left:0px;
-    width: 204px;
-    height: 700px;
+    width: 150px;
+    height: 525px;
 }
 
 .bottom_left{
@@ -93,7 +95,7 @@ a:active  { color: inherit; text-decoration: none;}
   color:white;
   font-weight:bold;
   font-family:"Times";
-  letter-spacing:-2px;
+  letter-spacing:10px;
   background-image:url("images/red\ stripes.webp");
   background-position:center;
   background-attachment:fixed;
@@ -103,10 +105,11 @@ a:active  { color: inherit; text-decoration: none;}
     line-height: 200px;    
     border: 3px solid black;
     position:absolute;
-    top:696px;
+    top:523px;
     left:0px;
-    width: 300px;
-    height: 200px;
+    width: 195px;
+    height: 236px;
+    -webkit-text-stroke: 1px black;
 }
 
 .bottom_right{
@@ -125,7 +128,7 @@ a:active  { color: inherit; text-decoration: none;}
   background-position:center;
   background-attachment:fixed;
   font-size:50px;
-  -webkit-text-stroke: 0.5px black;
+  -webkit-text-stroke: 1px black;
     text-align: center;
     vertical-align: middle;
     line-height: 340px;    
@@ -147,7 +150,7 @@ transition: all .5s ease;
 color:white;
 font-weight:bold;
 font-family:"Times";
-letter-spacing:-2px;
+letter-spacing:5px;
 background-image:url("images/pinkmess.webp");
 background-size: 150%;
 background-position:center;
@@ -155,13 +158,14 @@ background-attachment:fixed;
 font-size:50px;
   text-align: center;
   vertical-align: middle;
-  line-height: 380px;    
+  line-height: 285px;    
   border: 3px solid black;
+  -webkit-text-stroke: 1px black;
   position:absolute;
-  top:298px;
-  left:201px;
-  width: 360px;
-  height: 400px;
+  top:225px;
+  left:148px;
+  width: 270px;
+  height: 300px;
 }
 
 .bottom_right{
@@ -182,13 +186,14 @@ font-size:50px;
   font-size:50px;
     text-align: center;
     vertical-align: middle;
-    line-height: 400px;    
+    line-height: 250px;    
     border: 3px solid black;
     position:absolute;
-    top:492px;
-    left:559px;
-    width: 340px;
-    height: 400px;
+    top:419px;
+    left:415px;
+    width: 343px;
+    height: 339px;
+    -webkit-text-stroke: 1px black;
 }
 
 .bottom_middle {
@@ -201,21 +206,22 @@ transition: all .5s ease;
 color:white;
 font-weight:bold;
 font-family:"Times";
-letter-spacing:-2px;
+letter-spacing:5px;
 background-image:url("images/weirdfarm.webp");
 background-size: 150%;
 background-position:center;
 background-attachment:fixed;
+-webkit-text-stroke: 1px black;
 font-size:50px;
   text-align: center;
   vertical-align: middle;
   line-height: 200px;    
   border: 3px solid black;
   position:absolute;
-  top:695px;
-  left:290px;
-  width: 270px;
-  height: 200px;
+  top:523px;
+  left:193px;
+  width: 225px;
+   height: 236px;
 }
 
 .right_middle {
@@ -228,6 +234,7 @@ transition: all .5s ease;
 color:white;
 font-weight:bold;
 font-family:"Times";
+-webkit-text-stroke: 1px black;
 letter-spacing:-2px;
 background-image:url("images/spooky.webp");
 background-size: 150%;
@@ -236,11 +243,11 @@ background-attachment:fixed;
 font-size:50px;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;    
+  line-height: 150px;    
   border: 3px solid black;
   position:absolute;
-  top:298px;
-  left:558px;
+  top:222px;
+  left:415px;
   width: 342px;
   height: 200px;
 }
@@ -252,7 +259,7 @@ font-size:50px;
 .middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
 .contact:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
 .right_middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.bottom_middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
+.bottom_middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59);}
 
 .warning{
     color: red;
