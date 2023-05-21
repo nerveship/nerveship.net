@@ -6,7 +6,7 @@ body {
   font-family: "Arial";
   background-position: center;
   background-attachment: fixed;
-  background-image:url("images/cool_square_50.webp");
+  background-color: black;
   background-size: cover;
   background-repeat: repeat;
   overflow-x: hidden;
@@ -21,15 +21,15 @@ body {
 }
 
 a:visited {
-  color: #75a5d2;
+  color: #00cc00;
 }
 
 a {
-  color: #adaa4b;
+  color: #00cc00;
 }
 
 .table {
-  border: 1px solid #adaa4b;
+  border: 1px solid white;
   width: 100%; /* Adjust the width as needed */
   max-width: 1500px; /* Set a maximum width for the table */
   border-collapse: collapse;
@@ -39,7 +39,6 @@ a {
   margin-top: 100px;
   height:1100px;
   overflow:auto;
-  background-color: black;
 }
 
 
@@ -59,25 +58,24 @@ th {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #adaa4b;
+  background-color: #00cc00;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #75a5d2;
+  background-color: #009900;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #8ec4f6;
+  background-color: #66ff99;
 }
 
 .header {
-  background-color: black;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   height: 57px;
   width: 950px;
-  border: 2px solid #75a5d2;
+  border: 2px solid white;
   position: absolute;
   top: 2%;
   left: 50%;
