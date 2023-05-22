@@ -41,6 +41,7 @@ a:active  { color: inherit; text-decoration: none;}
   font-family:"Times";
   letter-spacing:10px;
   background-image:url("images/town.webp");
+  background-size: 300%;
   -webkit-text-stroke: 1px black;
   background-position:center;
   background-attachment:fixed;
@@ -71,6 +72,7 @@ a:active  { color: inherit; text-decoration: none;}
   background-image:url("images/cool-sphere.webp");
   background-position:center;
   background-attachment:fixed;
+  background-size: 600%;
   font-size:50px;
     text-align: center;
     writing-mode: vertical-rl;
@@ -99,6 +101,7 @@ a:active  { color: inherit; text-decoration: none;}
   background-image:url("images/red\ stripes.webp");
   background-position:center;
   background-attachment:fixed;
+  background-size: 50%;
   font-size:50px;
     text-align: center;
     vertical-align: middle;
@@ -208,7 +211,7 @@ font-weight:bold;
 font-family:"Times";
 letter-spacing:5px;
 background-image:url("images/weirdfarm.webp");
-background-size: 150%;
+background-size: 200%;
 background-position:center;
 background-attachment:fixed;
 -webkit-text-stroke: 1px black;
@@ -237,7 +240,7 @@ font-family:"Times";
 -webkit-text-stroke: 1px black;
 letter-spacing:-2px;
 background-image:url("images/spooky.webp");
-background-size: 150%;
+background-size: 200%;
 background-position:center;
 background-attachment:fixed;
 font-size:50px;
@@ -252,14 +255,14 @@ font-size:50px;
   height: 200px;
 }
 
-.top_right:hover {font-size: 4em; letter-spacing: 20px; color: rgb(59, 227, 59);}
-.left:hover {font-size: 4em; letter-spacing: 35px; color: rgb(59, 227, 59);}
-.bottom_left:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.bottom_right:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.contact:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.right_middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59);}
-.bottom_middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59);}
+.top_right:hover {font-size: 4em; letter-spacing: 20px; color: rgb(59, 227, 59); background-size:450%;}
+.left:hover {font-size: 4em; letter-spacing: 35px; color: rgb(59, 227, 59); background-size:750%;}
+.bottom_left:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:150%;}
+.bottom_right:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:150%;}
+.middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
+.contact:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:150%;}
+.right_middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
+.bottom_middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
 
 .warning{
     color: red;
