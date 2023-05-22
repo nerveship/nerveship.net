@@ -1,0 +1,46 @@
+body {
+  font-family: "Arial";
+  background-color: black;
+  background-image: url("images/pixel_outside.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  background-size: cover;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  height: 90%;
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  min-width: 30%;
+  margin: 0 auto;
+  color: white;
+  border: 0.1vw solid black; /* Use vw unit for border width */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #e1dccd;
+}
+
+.header {
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: "arial";
+  letter-spacing: 0.07em;
+  background-image: url("images/town.webp");
+  background-size: 300%;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 2vw;
+  letter-spacing: 0.15vw;
+  left: 3%;
+  color: black;
+  position: absolute;
+  overflow: hidden;
+}
