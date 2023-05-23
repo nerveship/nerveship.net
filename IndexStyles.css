@@ -231,7 +231,7 @@ font-size:50px;
 .top_right:hover {font-size: 4em; letter-spacing: 20px; color: rgb(59, 227, 59); background-size:450%;}
 .middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
 .right_middle:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
-.bottom_left:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:100%;}
+.bottom_left:hover {font-size: 4em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:150%;}
 .bottom_middle:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:250%;}
 .bottom_right:hover {font-size: 3em; letter-spacing: 5px; color: rgb(59, 227, 59); background-size:150%;}
 
