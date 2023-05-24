@@ -70,9 +70,9 @@ body {
 }
 
 a {
-  color: black;
+  color: #1cb82a;
 }
 
 a:visited{
-  color: red;
+  color: rgb(8, 0, 255);
 }
