@@ -35,7 +35,7 @@ body {
   letter-spacing: 0.07em;
   font-size: 2vw;
   letter-spacing: 0.15vw;
-  left: 3%;
+  left: 4%;
   color: black;
   position: absolute;
   overflow: hidden;
@@ -50,6 +50,20 @@ body {
   letter-spacing: 0.15vw;
   left: 35%;
   top: 5%;
+  color: black;
+  position: absolute;
+  overflow: hidden;
+}
+
+.recent {
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: "arial";
+  letter-spacing: 0.07em;
+  font-size: 1vw;
+  letter-spacing: 0.15vw;
+  left: 2%;
+  top: 10%;
   color: black;
   position: absolute;
   overflow: hidden;
