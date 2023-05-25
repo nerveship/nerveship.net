@@ -51,19 +51,18 @@ body {
   }
 
   .info {
-    font-weight: bold;
+    text-decoration: underline;
     font-family: "arial";
     font-size: 1vw;
     letter-spacing: 0.15vw;
     color: black;
     background-color: #e1dccd;
     text-align: center;
-    padding-bottom:5%;
+    padding-bottom:2%;
   }
 
   .content {
     margin: 0 auto;
-    font-weight: bold;
     font-family: "arial";
     letter-spacing: 0.07em;
     font-size: 1vw;
@@ -75,6 +74,17 @@ body {
     color: black;
     position: absolute;
     overflow: hidden;
+    padding-bottom: 2%;
+  }
+
+  .video {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
   }
   
   a {
@@ -84,3 +94,23 @@ body {
   a:visited{
     color: red;
   } 
+
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
