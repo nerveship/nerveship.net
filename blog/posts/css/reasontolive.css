@@ -1,0 +1,113 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    background-image: url("images/wateru.webp"); /* Background insert */
+    background-color: black;
+    background-repeat: repeat;
+    overflow: hidden;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: auto;
+    height: 90%;
+    width: 30%;
+    left: 50%;
+    top: 50%;
+    min-width: 30%;
+    margin: 0 auto;
+    color: white;
+    border: 0.1vw solid black; /* Use vw unit for border width */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #e1dccd; /* Select box colour */
+  }
+
+  .header {
+    font-weight: bold;
+    font-family: "arial";
+    font-size: 1vw;
+    letter-spacing: 0.15vw;
+    color: black;
+    background-color: #e1dccd;
+    text-align: center;
+    padding-bottom:2%;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-family: "arial";
+    font-size: 1vw;
+    letter-spacing: 0.15vw;
+    color: black;
+    background-color: #e1dccd;
+    text-align: center; 
+    padding-bottom:2%;
+  }
+
+  .info {
+    text-decoration: underline;
+    font-family: "arial";
+    font-size: 1vw;
+    letter-spacing: 0.15vw;
+    color: black;
+    background-color: #e1dccd;
+    text-align: center;
+    padding-bottom:2%;
+  }
+
+  .content {
+    margin: 0 auto;
+    font-family: "arial";
+    letter-spacing: 0.07em;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    left: 1%; /* Adjust position depending */
+    top: auto; /* Adjust position depending */
+    height: auto;
+    width: auto;
+    color: black;
+    position: absolute;
+    overflow: hidden;
+    padding-bottom: 2%;
+  }
+
+  .video {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:visited{
+    color: red;
+  } 
+
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
