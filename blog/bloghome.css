@@ -34,7 +34,7 @@ body {
   font-family: "arial";
   letter-spacing: 0.07em;
   font-size: 2vw;
-  letter-spacing: 0.15vw;
+  letter-spacing: 0.1vw;
   left: 4%;
   color: black;
   position: absolute;
@@ -47,7 +47,7 @@ body {
   font-family: "arial";
   letter-spacing: 0.07em;
   font-size: 1vw;
-  letter-spacing: 0.15vw;
+  letter-spacing: 0.1vw;
   left: 35%;
   top: 5%;
   color: black;
@@ -61,7 +61,6 @@ body {
   font-family: "arial";
   letter-spacing: 0.07em;
   font-size: 1vw;
-  letter-spacing: 0.15vw;
   left: 2%;
   top: 10%;
   color: black;
