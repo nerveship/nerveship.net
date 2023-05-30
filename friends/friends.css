@@ -10,6 +10,18 @@ body {
     overflow: hidden;
   }
   
+  .descriptor {
+    font-weight: bold;
+    font-family: "arial";
+    letter-spacing: 0.07em;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 3%;
+  }
+
   .container {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,7 +29,7 @@ body {
     overflow: hidden;
     
     /* change these to add more friends/space */
-    height: 20%;
+    height: 29.5%;
     width: 28%;
 
     left: 50%;
