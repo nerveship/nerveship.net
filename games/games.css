@@ -1,0 +1,33 @@
+html, body {height:100%}
+
+body{
+  font-family:"Arial";
+  background-image:url("images/games.webp");
+  background-position:center;
+  background-attachment:fixed;
+  background-color:black;
+  background-size:cover;
+  background-repeat:repeat;
+  overflow: hidden;
+}
+
+.header {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 57px;
+    width: 230px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.557);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    font-family: "Times";
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 55px;
+  }
