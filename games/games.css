@@ -11,6 +11,24 @@ body{
   overflow: hidden;
 }
 
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  height: 90%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  min-width: 30%;
+  margin: 0 auto;
+  color: white;
+  border: 0.1vw solid black; /* Use vw unit for border width */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #e1dccd0f;
+}
+
 .header {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
