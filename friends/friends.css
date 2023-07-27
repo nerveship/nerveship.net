@@ -29,7 +29,7 @@ body {
     overflow: hidden;
     
     /* change these to add more friends/space */
-    height: 29.5%;
+    height: auto;
     width: 28%;
 
     left: 50%;
