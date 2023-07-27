@@ -118,3 +118,21 @@ tfoot th {
   margin-top: 55px;
   margin-left: 550px;
 }
+
+/* mobile shit */
+@media only screen and (max-width: 640px) {
+  .header{
+      display:block;
+      width:90%;
+      height:90px;
+  }
+
+  body{
+      padding:2%;
+  }
+
+  .table{
+      overflow-x: auto;
+      max-height:750px;
+  }
+}
