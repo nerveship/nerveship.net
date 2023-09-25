@@ -7,9 +7,12 @@ def get_input(array):
         answer = input(title)
         answers.append(answer)
 
+def print_html():
+    print("<tr>")
+    for i in answers:
+        print("    <td class=\"fitwidth\">" + i + "</td>")
+    print("</tr>")
+
 get_input(categories)
 
-print("<tr>")
-for i in answers:
-    print("    <td class=\"fitwidth\">" + i + "</td>")
-print("</tr>")
+print_html()
