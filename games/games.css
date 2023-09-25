@@ -82,12 +82,12 @@ body{
     padding-top: 10px;
     color: white;
     border: 2px solid white;
-    width: 15%;
+    width: 20%;
     height: auto;
     position: relative;
     top: -45%;
     left: 65%;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin-top: 90px; /* Adjust this value according to the height of the header */
   }
