@@ -1,4 +1,7 @@
+import fileinput
+
 #Init vars
+filename = "nerveship.net\gamelog\index.html"
 categories = ["Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"]
 answers = []
 
@@ -11,10 +14,11 @@ def get_input(array):
 
 #Generates the correctly formatted html
 def print_html():
-    print("<tr>")
+    final_string = "<tr>\n"
     for i in answers:
-        print("    <td class=\"fitwidth\">" + i + "</td>")
-    print("</tr>")
+        final_string += "    <td class=\"fitwidth\">" + i + "</td>\n"
+    final_string += "</tr>"
+    print(final_string)
 
 get_input(categories)
 print_html()
