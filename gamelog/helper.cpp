@@ -1,23 +1,23 @@
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main()
 {
-    string Categories[8] = {"Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"};
-    string Answers[8];
+    std::string Categories[8] = {"Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"};
+    std::string Answers[8];
 
     //Get answers for each category
     for (int i = 0; i < 8; i++)
     {
-        cout << Categories[i] << ": ";
-        getline(cin, Answers[i]);
+        std::cout << Categories[i] << ": ";
+        std::getline(std::cin, Answers[i]);
     }
 
     //Print out the formatted html
-    cout << "<tr>\n";
+    std::cout << "<tr>\n";
     for (int i = 0; i < 8; i++)
     {
-        cout << "    <td class=\"fitwidth\">" + Answers[i] + "</td>\n"; 
+        std::cout << "    <td class=\"fitwidth\">" + Answers[i] + "</td>\n"; 
     }
-    cout << "</tr>\n";
+    std::cout << "</tr>\n";
 }
