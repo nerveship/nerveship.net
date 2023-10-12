@@ -20,5 +20,7 @@ def print_html():
     final_string += "</tr>"
     print(final_string)
 
+#test
+
 get_input(categories)
 print_html()
