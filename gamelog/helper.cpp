@@ -20,4 +20,6 @@ int main()
         std::cout << "    <td class=\"fitwidth\">" + Answers[i] + "</td>\n"; 
     }
     std::cout << "</tr>\n";
+
+    
 }
