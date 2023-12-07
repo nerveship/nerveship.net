@@ -1,5 +1,5 @@
 #Init vars
-categories = ["Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"]
+categories = ["Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"] 
 answers = []
 final_string = ''
 
