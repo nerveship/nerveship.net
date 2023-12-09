@@ -1,3 +1,5 @@
+import os
+
 #Init vars
 categories = ["Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"] 
 answers = []
@@ -19,4 +21,5 @@ def format_html():
     print(final_string)
 
 get_input(categories)
+os.system('cls')
 format_html()
