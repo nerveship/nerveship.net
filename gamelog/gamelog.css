@@ -13,7 +13,7 @@ body {
 }
 
 .table-container {
-  width: 99.5;
+  width: auto;
   overflow-x: auto;
   display: flex;
   justify-content: center;
@@ -37,14 +37,14 @@ a {
   position: relative; /* Change to relative to make it stay within the container */
   text-align: center;
   margin-top: 100px;
-  height:1100px;
+  height:1200px;
   overflow:auto;
 }
 
 
 th,
 td {
-  padding: 15px;
+  padding: 20px;
   font-style: bold;
   overflow: hidden;
   text-overflow: ellipsis;
