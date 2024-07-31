@@ -1,5 +1,6 @@
 html {
   font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
 }
 
 body {
@@ -28,32 +29,24 @@ a {
   color: #00cc00;
 }
 
+th, td {
+  padding: 10px;
+  text-align: left;
+  max-width: 250px;
+}
+
+
 .table {
   border: 1px solid white;
-  width: 100%; /* Adjust the width as needed */
+  width: auto; /* Adjust the width as needed */
   max-width: 1500px; /* Set a maximum width for the table */
   border-collapse: collapse;
   color: white;
   position: relative; /* Change to relative to make it stay within the container */
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
   height:1200px;
   overflow:auto;
-}
-
-
-th,
-td {
-  padding: 20px;
-  font-style: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-}
-
-th {
-  position: sticky; top: 0;
-  background: black;
 }
 
 ::-webkit-scrollbar {
@@ -89,50 +82,11 @@ th {
   padding-bottom: 35px;
 }
 
-.thead th {
-  padding-right: 5px;
-  padding-left: 5px;
-}
 
-/* typography */
-
-th {
-  letter-spacing: 2px;
-}
-
-td {
-  letter-spacing: 1px;
-}
-
-tbody td {
-  text-align: center;
-}
-
-tfoot th {
-  text-align: right;
-}
 
 .return {
   color:white;
   font-size: 25px;
   margin-top: 55px;
   margin-left: 550px;
-}
-
-/* mobile shit */
-@media only screen and (max-width: 640px) {
-  .header{
-      display:block;
-      width:90%;
-      height:90px;
-  }
-
-  body{
-      padding:2%;
-  }
-
-  .table{
-      overflow-x: auto;
-      max-height:750px;
-  }
 }
