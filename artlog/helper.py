@@ -1,7 +1,7 @@
 import os
 
 #init vars
-categories = ["Title", "Developer", "Publisher", "Genre", "Platform", "Release", "Completion", "Rating"] 
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
 answers = []
 final_string = ''
 
@@ -16,7 +16,7 @@ def get_input(array):
 def format_html():
     final_string = "<tr>\n"
     for i in answers:
-        final_string += "    <td class=\"fitwidth\">" + i + "</td>\n"
+        final_string += "    <td>" + i + "</td>\n"
     final_string += "</tr>"
     print(final_string)
 
