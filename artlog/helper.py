@@ -20,6 +20,15 @@ def format_html():
     final_string += "</tr>"
     print(final_string)
 
+def format_tweet():
+    print("-------------")
+    if answers[0].lower() == "anime":
+        print("Artlog add! " + answers[1] + " - An " + answers[0] + " made by " + answers[2]+ "." + "\nRated: " + answers[5])
+    else:
+        print("Artlog add! " + answers[1] + " - A " + answers[0] + " made by " + answers[2] + "." + "\nRated: " + answers[5])
+    print("https://www.nerveship.net/artlog/")
+
 get_input(categories)
 os.system('cls') #clears screen
 format_html()
+format_tweet()
