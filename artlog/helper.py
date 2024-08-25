@@ -25,7 +25,7 @@ def format_tweet():
     if answers[0].lower() == "anime":
         print("Artlog add! " + answers[1] + " - An " + answers[0].lower() + " made by " + answers[2]+ "." + "\nRated: " + answers[5] + ".")
     else:
-        print("Artlog add! " + answers[1] + " - A " + answers[0].lower()  + " made by " + answers[2] + "." + "\nRated: " + answers[5] + ".")
+        print("Artlog add! " + answers[1] + " - A " + answers[0].lower()  + " made by " + answers[2] + " in " + answers[3][-4:] + "." + "\nRated: " + answers[5] + ".")
     print("https://www.nerveship.net/artlog/")
 
 get_input(categories)
