@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="gamelog.css">
+        <script src="jquery-3.7.1.min.js"></script>
         <link rel="icon" type="image/x-icon" href="nerveship.net\images\green_favi.png">
     </head>
     <body>
@@ -27,15 +28,15 @@
                             padding: 10px 10px;
                         }
                     </style>
-                    <table>
+                    <table id="myTable">
                         <tbody>
                             <tr>
-                                <th>Type</th>
-                                <th>Title</th>
-                                <th>Creator</th>
-                                <th>Release</th>
-                                <th>Completion</th>
-                                <th>Rating</th>
+                              <th onclick="sortTable(0)">Type</th>
+                              <th onclick="sortTable(1)">Title</th>
+                              <th onclick="sortTable(2)">Creator</th>
+                              <th onclick="sortTable(3)">Release</th>
+                              <th onclick="sortTable(4)">Completion</th>
+                              <th onclick="sortTable(5)">Rating</th>
                             </tr>
                             <!--INSERT UNDER-->
                             <tr>
@@ -3621,7 +3622,6 @@
                                 <td>April 26, 2013</td>
                                 <td>4/5</td>
                              </tr>
-                             
                         </tbody>
                     </table>
                 </tbody>
