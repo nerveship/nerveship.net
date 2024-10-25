@@ -31,6 +31,5 @@ def format_tweet():
     print("https://www.nerveship.net/artlog/")
 
 get_input(categories)
-os.system('cls') #clears screen
 format_html()
 format_tweet()
