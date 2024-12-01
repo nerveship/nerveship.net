@@ -1,19 +1,18 @@
-# Initialize variables
-import logging
-
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
+# Define the categories of information to collect from the user
 categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
 
 # Collects input for each category and adds it to a list
 def collect_user_input(categories):
+    """
+    Prompts the user to input information for each category.
+    Ensures that no input is left empty.
+    """
     answers = []
     for category in categories:
         title = category + ": "
         while True:
             answer = input(title)
-            if answer.strip():
+            if answer.strip():  # Ensure the input is not empty or just whitespace
                 answers.append(answer)
                 break
             else:
@@ -22,6 +21,9 @@ def collect_user_input(categories):
 
 # Generates the correctly formatted HTML
 def format_html(answers):
+    """
+    Formats the user's answers into an HTML table row.
+    """
     if len(answers) != len(categories):
         raise ValueError("The number of answers provided does not match the expected number of categories.")
     
@@ -33,8 +35,12 @@ def format_html(answers):
 
 # Generates the formatted tweet
 def format_tweet(answers):
+    """
+    Formats the user's answers into a tweet-like message.
+    """
     article = "An" if answers[0].lower() in ["anime", "album"] else "A"
     release_year = "unknown"
+    # Extract the last 4 characters of the release information if they represent a year
     if len(answers[3]) >= 4 and answers[3][-4:].isdigit():
         release_year = answers[3][-4:]
     
@@ -44,10 +50,11 @@ def format_tweet(answers):
              f"https://www.nerveship.net/artlog/")
     return tweet
 
-# Main flow
-answers = collect_user_input(categories)
-html_output = format_html(answers)
-tweet_output = format_tweet(answers)
+# Main flow of the script
+answers = collect_user_input(categories)  # Collects user input for each category
+html_output = format_html(answers)  # Formats the input into HTML
+tweet_output = format_tweet(answers)  # Formats the input into a tweet
 
+# Print the outputs
 print(html_output)
 print(tweet_output)
