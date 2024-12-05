@@ -35,9 +35,6 @@ def format_html(answers):
 
 # Generates the formatted tweet
 def format_tweet(answers):
-    """
-    Formats the user's answers into a tweet-like message.
-    """
     article = "An" if answers[0].lower() in ["anime", "album"] else "A"
     release_year = "unknown"
     # Extract the last 4 characters of the release information if they represent a year
