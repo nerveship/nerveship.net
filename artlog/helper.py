@@ -42,7 +42,7 @@ def format_tweet(answers):
         release_year = answers[3][-4:]
     
     tweet = (f"-------------\n"
-             f"Artlog add! {answers[1]} - {article} {answers[0].lower()} by {answers[2]}, "
+             f"{answers[1]} - {article} {answers[0].lower()} by {answers[2]}, "
              f"released in {release_year}.\nRated: {answers[5]}.\n"
              f"https://www.nerveship.net/artlog/")
     return tweet
