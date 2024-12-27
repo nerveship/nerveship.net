@@ -14,8 +14,10 @@ body {
 }
 
 .alnright { 
-  text-align: center; 
+  text-align: center;
+  padding-right: 1.75%; /* stupid */
 }
+
 
 #info-box {
   position: absolute;
@@ -45,8 +47,7 @@ a {
 
 th, td {
   padding: 10px;
-  text-align: left;
-  max-width: 250px;
+  position: sticky
 }
 
 
