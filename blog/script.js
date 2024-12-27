@@ -15,8 +15,8 @@
 //==[ 1. BASIC INFO ]==
 
 let blogName = "my blog";
-let authorName = "me";
-let authorLink = ""; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let authorName = "nerveship";
+let authorLink = "https://x.com/nerveship"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 //-----------------------------
 
@@ -30,7 +30,7 @@ let authorLink = ""; // Enter your website, social media, etc. Some way for peop
 /*UPDATE: as of version 1.3, you may omit the date if you would like. But if you
   use a date it must still follow that format.*/
 
-let postsArray = [ ["posts/2024-08-02-New Blog!.html"]];
+let postsArray = [["posts/2024-08-02-New Blog!.html"], [""]];
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
