@@ -1,5 +1,5 @@
 # Define the categories of information to collect from the user
-categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended"] 
 
 # Collects input for each category and adds it to a list
 def collect_user_input(categories):
@@ -21,12 +21,6 @@ def collect_user_input(categories):
 
 # Generates the correctly formatted HTML
 def format_html(answers):
-    """
-    Formats the user's answers into an HTML table row.
-    """
-    if len(answers) != len(categories):
-        raise ValueError("The number of answers provided does not match the expected number of categories.")
-    
     html_string = "<tr>\n"
     for answer in answers:
         html_string += "    <td>" + answer + "</td>\n"
@@ -35,7 +29,7 @@ def format_html(answers):
 
 # Generates the formatted tweet
 def format_tweet(answers):
-    article = "An" if answers[0].lower() in ["anime", "album"] else "A"
+    article = "An" if answers[0].lower() in ["anime"] else "A"
     release_year = "unknown"
     # Extract the last 4 characters of the release information if they represent a year
     if len(answers[3]) >= 4 and answers[3][-4:].isdigit():
