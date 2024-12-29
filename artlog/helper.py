@@ -41,7 +41,7 @@ def format_tweet(answers):
     
     tweet = (f"-------------\n"
              f"{answers[1]} - {article} {answers[0].lower()} by {answers[2]}, "
-             f"released in {release_year}.\nRecommended? {answers[5]}.\n"
+             f"released in {release_year}.\nDo I recommend it? {answers[5]}.\n"
              f"https://www.nerveship.net/artlog/")
     return tweet
 
