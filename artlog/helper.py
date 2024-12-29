@@ -22,10 +22,14 @@ def collect_user_input(categories):
 # Generates the correctly formatted HTML
 def format_html(answers):
     html_string = "<tr>\n"
-    for answer in answers:
-        html_string += "    <td>" + answer + "</td>\n"
+    for i, answer in enumerate(answers):
+        if i == len(answers) - 1:  # Check if it's the last iteration
+            html_string += '    <td class="alnright">' + answer + "</td>\n"
+        else:
+            html_string += "    <td>" + answer + "</td>\n"
     html_string += "</tr>"
     return html_string
+
 
 # Generates the formatted tweet
 def format_tweet(answers):
@@ -37,7 +41,7 @@ def format_tweet(answers):
     
     tweet = (f"-------------\n"
              f"{answers[1]} - {article} {answers[0].lower()} by {answers[2]}, "
-             f"released in {release_year}.\nRated: {answers[5]}.\n"
+             f"released in {release_year}.\nRecommended? {answers[5]}.\n"
              f"https://www.nerveship.net/artlog/")
     return tweet
 
