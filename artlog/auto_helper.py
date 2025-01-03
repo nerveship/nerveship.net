@@ -1,6 +1,8 @@
 from imdb import Cinemagoer
 from howlongtobeatpy import HowLongToBeat
 
+which_dir = int()
+
 class ArtClassifier:
     def __init__(self):
         self.type = ""
@@ -16,17 +18,8 @@ class ArtClassifier:
             self.search_for_game()
 
     def search_for_film(self):
-        counter = 0
-        print("What is the Letterboxd URL of the movie?")
+        print("What is the IMDB ID of the movie?")
         answer = self.ia.get_movie(input())
-
-        # Get directors
-        for i in answer['directors']:
-            print(str(counter) + ": " + i['name'])
-            counter += 1
-        print("Which director to list as creator?")
-        which_dir = input()
-        print(answer['directors'][int(which_dir)])
 
         # Call format_html with the current type and answer
         format_html(self.type, answer)
@@ -38,9 +31,8 @@ class ArtClassifier:
 
 # External function
 def format_html(type, answer):
-    print(f"Type: {type}")
-    print(f"Answer: {answer}")
-    print(answer.year)
+    print(f"Type: {type.capitalize()}")
+    print(f"Title: {answer}")
 
 classifier = ArtClassifier()
 classifier.determine_type()
