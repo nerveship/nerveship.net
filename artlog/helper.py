@@ -33,7 +33,7 @@ def format_html(answers):
 
 #generates the formatted tweet
 def format_tweet(answers):
-    article = "An" if answers[0].lower() in ["anime"] else "A"
+    article = "An" if answers[0].lower() in ["anime", "album"] else "A"
     release_year = "unknown"
     #extract the last 4 characters of the release information if they represent a year
     if len(answers[3]) >= 4 and answers[3][-4:].isdigit():
