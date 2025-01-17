@@ -4,8 +4,10 @@ categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended"
 
 def collect_user_input(categories):
     answers = []
+
     for category in categories:
         title = category + ": "
+
         while True:
             answer = input(title)
             if answer.strip():
@@ -13,16 +15,20 @@ def collect_user_input(categories):
                 break
             else:
                 print("Input cannot be empty. Please provide a valid response.")
+
     return answers
 
 def format_html(answers):
     html_string = "<tr>\n"
+
     for i, answer in enumerate(answers):
         if i == len(answers) - 1:
             html_string += '    <td class="alnright">' + answer + "</td>\n"
         else:
             html_string += "    <td>" + answer + "</td>\n"
+
     html_string += "</tr>\n"
+
     return html_string
 
 def insert_at_line(html_string, file_name="artlog/index.html", line_number=42):
@@ -46,6 +52,7 @@ def insert_at_line(html_string, file_name="artlog/index.html", line_number=42):
             file.writelines(lines)
         
         print(f"HTML entry successfully added at line {line_number} in '{file_name}'")
+
     except Exception as e:
         print(f"An error occurred while modifying the file: {e}")
 
