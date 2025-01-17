@@ -1,7 +1,7 @@
 import os
 
 #init vars
-categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommendation"] 
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended?"] 
 answers = []
 final_string = ''
 
