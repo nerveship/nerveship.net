@@ -1,55 +1,58 @@
-#define the categories of information to collect from the user
-categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended"] 
+import os
 
-#collects input for each category and adds it to a list
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended"]
+
 def collect_user_input(categories):
-    """
-    Prompts the user to input information for each category.
-    Ensures that no input is left empty.
-    """
     answers = []
     for category in categories:
         title = category + ": "
         while True:
             answer = input(title)
-            if answer.strip():  #ensure the input is not empty or just whitespace
+            if answer.strip():
                 answers.append(answer)
                 break
             else:
                 print("Input cannot be empty. Please provide a valid response.")
     return answers
 
-#generates the correctly formatted HTML
 def format_html(answers):
     html_string = "<tr>\n"
     for i, answer in enumerate(answers):
-        if i == len(answers) - 1:  #check if it's the last iteration
+        if i == len(answers) - 1:
             html_string += '    <td class="alnright">' + answer + "</td>\n"
         else:
             html_string += "    <td>" + answer + "</td>\n"
-    html_string += "</tr>"
+    html_string += "</tr>\n"
     return html_string
 
+def insert_at_line(html_string, file_name="artlog/index.html", line_number=42):
+    try:
+        if not os.path.exists(file_name):
+            print(f"The file '{file_name}' does not exist.")
+            return
+        
+        with open(file_name, "r", encoding="utf-8") as file:
+            lines = file.readlines()
+        
+        while len(lines) < line_number:
+            lines.append("\n")
+        
+        indented_html = "\n".join(["\t" * 9 + line for line in html_string.split("\n") if line.strip() != ""])
+        
+        lines.insert(line_number - 1, "\n")
+        lines.insert(line_number, indented_html + "\n")
+        
+        with open(file_name, "w", encoding="utf-8") as file:
+            file.writelines(lines)
+        
+        print(f"HTML entry successfully added at line {line_number} in '{file_name}'")
+    except Exception as e:
+        print(f"An error occurred while modifying the file: {e}")
 
-#generates the formatted tweet
-def format_tweet(answers):
-    article = "An" if answers[0].lower() in ["anime", "album"] else "A"
-    release_year = "unknown"
-    #extract the last 4 characters of the release information if they represent a year
-    if len(answers[3]) >= 4 and answers[3][-4:].isdigit():
-        release_year = answers[3][-4:]
-    
-    tweet = (f"-------------\n"
-             f"{answers[1]} - {article} {answers[0].lower()} by {answers[2]}, "
-             f"released in {release_year}.\nDo I recommend it? {answers[5]}.\n"
-             f"https://www.nerveship.net/artlog/")
-    return tweet
+answers = collect_user_input(categories)
+html_output = format_html(answers)
 
-#main flow of the script
-answers = collect_user_input(categories)  #collects user input for each category
-html_output = format_html(answers)  #formats the input into HTML
-tweet_output = format_tweet(answers)  #formats the input into a tweet
-
-#print the outputs
+print("Generated HTML:")
 print(html_output)
-print(tweet_output)
+
+insert_at_line(html_output, file_name="artlog/index.html", line_number=42)
