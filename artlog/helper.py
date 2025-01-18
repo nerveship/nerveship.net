@@ -17,7 +17,7 @@ def format_html():
     total_answers = len(answers)
     
     for index, i in enumerate(answers):
-        if index == total_answers - 1: #ceck if it's the last item
+        if index == total_answers - 1: #check if it's the last item
             final_string += f"\t\t\t\t\t\t\t\t\t\t    <td class=\"alnright\">{i}</td>\n"
         else:
             final_string += f"\t\t\t\t\t\t\t\t\t\t    <td>{i}</td>\n"
