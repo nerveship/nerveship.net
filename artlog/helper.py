@@ -3,7 +3,6 @@ import os
 #init vars
 categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended?"] 
 answers = []
-final_string = ''
 
 #gets input for each category and adds it to answers
 def get_input(array):
@@ -14,11 +13,18 @@ def get_input(array):
 
 #generates the correctly formatted html
 def format_html():
-    final_string = "<tr>\n"
-    for i in answers:
-        final_string += "    <td>" + i + "</td>\n"
-    final_string += "</tr>"
-    print(final_string)
+    final_string = "\t\t\t\t\t\t\t\t\t<tr>\n"
+    total_answers = len(answers)
+    
+    for index, i in enumerate(answers):
+        if index == total_answers - 1: #ceck if it's the last item
+            final_string += f"\t\t\t\t\t\t\t\t\t\t    <td class=\"alnright\">{i}</td>\n"
+        else:
+            final_string += f"\t\t\t\t\t\t\t\t\t\t    <td>{i}</td>\n"
+    
+    final_string += "\t\t\t\t\t\t\t\t\t</tr>"
+    return final_string
+
 
 def format_tweet():
     print("-------------")
@@ -26,6 +32,24 @@ def format_tweet():
     print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
     print("https://www.nerveship.net/artlog/")
 
+def write_to_html():
+    html_file = "artlog\index.html"  
+
+    
+    with open(html_file, 'r', encoding="utf8") as file:
+        data = file.readlines()
+    
+    
+    html_string = f"{format_html()}\n"
+
+   
+    data.insert(41, html_string)
+
+   
+    with open(html_file, 'w', encoding="utf8") as file:
+        file.writelines(data)
+
 get_input(categories)
 format_html()
 format_tweet()  
+write_to_html()
