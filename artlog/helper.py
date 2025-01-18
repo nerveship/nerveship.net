@@ -23,7 +23,7 @@ def format_html():
 def format_tweet():
     print("-------------")
     article = "An" if answers[0].lower() in ['anime', 'album'] else "A"
-    print("Artlog add! " + answers[1] + " - " + article + " " + answers[0].lower()  + " made by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
+    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
     print("https://www.nerveship.net/artlog/")
 
 get_input(categories)
