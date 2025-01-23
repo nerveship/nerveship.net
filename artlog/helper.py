@@ -26,11 +26,11 @@ def format_html():
     return final_string
 
 
-def format_tweet():
-    print("-------------")
-    article = "An" if answers[0].lower() in ['anime', 'album'] else "A"
-    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
-    print("https://www.nerveship.net/artlog/")
+# def format_tweet():
+#     print("-------------")
+#     article = "An" if answers[0].lower() in ['anime', 'album'] else "A"
+#     print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
+#     print("https://www.nerveship.net/artlog/")
 
 def write_to_html():
     html_file = "artlog\index.html"  
@@ -51,5 +51,5 @@ def write_to_html():
 
 get_input(categories)
 format_html()
-format_tweet()  
+# format_tweet()  
 write_to_html()
