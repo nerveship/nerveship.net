@@ -48,6 +48,8 @@ def write_to_html():
    
     with open(html_file, 'w', encoding="utf8") as file:
         file.writelines(data)
+    
+    print("html string written to " + str(html_file))
 
 get_input(categories)
 format_html()
