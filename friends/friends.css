@@ -1,0 +1,92 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    background-image: url("images/pixel_outside.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    background-repeat: repeat;
+    overflow: hidden;
+  }
+  
+  .descriptor {
+    font-weight: bold;
+    font-family: "arial";
+    letter-spacing: 0.07em;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .container {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    
+    /* change these to add more friends/space */
+    height: auto;
+    width: 28%;
+
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    color: white;
+    border: 0.1vw solid black; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #e1dccd;
+  }
+  
+  .header {
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: "arial";
+    letter-spacing: 0.07em;
+    font-size: 2vw;
+    top: 4%;
+    letter-spacing: 0.1vw;
+    color: black;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .return {
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: "arial";
+    letter-spacing: 0.07em;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    top: 5%;
+    color: black;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .list {
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: "arial";
+    text-align: center;
+    position: relative;
+    letter-spacing: 0.1em;
+    font-size: 1vw;
+    top: 10%;
+    color: black;
+    overflow: hidden;
+  }
+  
+  a {
+    color: #1cb82a;
+  }
+  
+  a:visited{
+    color: #1cb82a;
+  }
