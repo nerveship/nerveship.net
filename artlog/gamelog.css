@@ -47,9 +47,15 @@ a {
 
 th, td {
   padding: 10px;
-  position: sticky
+  position: sticky;
 }
 
+th {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
 
 .table {
   border: 1px solid white;
