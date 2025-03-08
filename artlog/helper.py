@@ -18,7 +18,7 @@ def format_html():
     
     for index, i in enumerate(answers):
         if index == total_answers - 1: #check if it's the last item
-            final_string += f"\t\t\t\t\t\t\t\t\t\t    <td class=\"alnright\">{i}</td>\n"
+            final_string += f"\t\t\t\t\t\t\t\t\t\t    <td class=\"alnright\">{i}</td>\n" #the \t's add tab indents, idk it looks stupid as fuck but it works
         else:
             final_string += f"\t\t\t\t\t\t\t\t\t\t    <td>{i}</td>\n"
     
