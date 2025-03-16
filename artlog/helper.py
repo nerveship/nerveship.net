@@ -1,7 +1,7 @@
 import os
 
 #init vars
-categories = ["Type", "Title", "Creator", "Release", "Completion", "Recommended?"] 
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Did I like it?"] 
 answers = []
 
 #gets input for each category and adds it to answers
@@ -29,7 +29,7 @@ def format_html():
 def format_tweet():
     print("-------------")
     article = "An" if answers[0].lower() in ['anime', 'album'] else "A"
-    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I Recommend it? " + answers[5] + ".")
+    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nDo I like it? " + answers[5] + ".")
     print("https://www.nerveship.net/artlog/")
 
 def write_to_html():
