@@ -63,6 +63,8 @@ body{
     background-color: black;
     text-align: center;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
     color: white;
     border: 2px solid white;
     width: 53%;
