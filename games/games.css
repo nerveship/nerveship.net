@@ -25,14 +25,14 @@ body{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   overflow: hidden;
-  height: 90%;
+  height: 100%;
   width: 100%;
   left: 50%;
   top: 50%;
   min-width: 30%;
   margin: 0 auto;
   color: white;
-  border: 0.1vw solid black; /* Use vw unit for border width */
+  border: 1vw solid black; 
   position: absolute;
   transform: translate(-50%, -50%);
   background-color: #e1dccd0f;
@@ -67,13 +67,12 @@ body{
     padding-right: 20px;
     color: white;
     border: 2px solid white;
-    width: 53%;
-    height: 35%;
+    width: 35%;
+    height: 75%;
     position: relative;
     top: -1%;
-    left: 10%;
+    left: 25%;
     font-size: 25px;
-    letter-spacing: 2px;
     margin-top: 90px; /* Adjust this value according to the height of the header */
     overflow: auto;
   }
@@ -87,7 +86,7 @@ body{
     width: 20%;
     height: auto;
     position: relative;
-    top: -45%;
+    top: -75%;
     left: 65%;
     font-size: 25px;
     letter-spacing: 2px;
