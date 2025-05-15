@@ -15,7 +15,7 @@ body {
 
 .alnright { 
   text-align: center;
-  padding-right: 2.5%; /* stupid */
+  padding-right: 5%; /* stupid */
 }
 
 
@@ -66,7 +66,7 @@ th {
   position: relative; /* Change to relative to make it stay within the container */
   text-align: left;
   margin-top: 100px;
-  height:1200px;
+  height:1100px;
   overflow:auto;
 }
 
