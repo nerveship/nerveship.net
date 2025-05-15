@@ -1,7 +1,7 @@
 import os
 
 #init vars
-categories = ["Type", "Title", "Creator", "Release", "Completion", "Did I like it?"] 
+categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
 answers = []
 
 #gets input for each category and adds it to answers
