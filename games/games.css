@@ -1,0 +1,94 @@
+html, body {height:100%}
+
+a:visited {
+  color: #00cc00;
+}
+
+a {
+  color: #00cc00;
+}
+
+
+body{
+  font-family:"Arial";
+  background-image:url("images/games.webp");
+  background-position:center;
+  background-attachment:fixed;
+  background-color:black;
+  background-size:cover;
+  background-repeat:repeat;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  min-width: 30%;
+  margin: 0 auto;
+  color: white;
+  border: 1vw solid black; 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #e1dccd0f;
+}
+
+.header {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 85px;
+    width: 230px;
+    border: 2px solid white;
+    background-color: black;
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    font-family: "Times";
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 55px;
+  }
+
+  .info {
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: white;
+    border: 2px solid white;
+    width: 35%;
+    height: 75%;
+    position: relative;
+    top: -1%;
+    left: 25%;
+    font-size: 25px;
+    margin-top: 90px; /* Adjust this value according to the height of the header */
+    overflow: auto;
+  }
+
+  .sideinfo {
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    border: 2px solid white;
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: -75%;
+    left: 65%;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 90px; /* Adjust this value according to the height of the header */
+  }

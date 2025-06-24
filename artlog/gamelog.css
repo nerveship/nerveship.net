@@ -1,0 +1,113 @@
+html {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+body {
+  font-family: "Arial";
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  background-size: cover;
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+.alnright { 
+  text-align: center;
+  padding-right: 5%; /* stupid */
+}
+
+
+#info-box {
+  position: absolute;
+  top: 10px; /* Adjust based on your table's position */
+  left: 300px; /* Adjust based on your layout */
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.table-container {
+  width: auto;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:visited {
+  color: #00cc00;
+}
+
+a {
+  color: #00cc00;
+}
+
+th, td {
+  padding: 10px;
+  position: sticky;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.table {
+  border: 1px solid white;
+  width: auto; /* Adjust the width as needed */
+  max-width: 1500px; /* Set a maximum width for the table */
+  border-collapse: collapse;
+  color: white;
+  position: relative; /* Change to relative to make it stay within the container */
+  text-align: left;
+  margin-top: 100px;
+  height:1100px;
+  overflow:auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #00cc00;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #009900;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #66ff99;
+}
+
+.header {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 57px;
+  width: 950px;
+  border: 2px solid white;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  font-family: "Times";
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+
+
+.return {
+  color:white;
+  font-size: 25px;
+  margin-top: 55px;
+  margin-left: 550px;
+}
