@@ -1,94 +1,146 @@
 html, body {height:100%}
-
 a:visited {
   color: #00cc00;
 }
-
 a {
   color: #00cc00;
 }
-
-
 body{
-  font-family:"Arial";
+  font-family: Arial, Helvetica, sans-serif;
   background-image:url("images/games.webp");
   background-position:center;
   background-attachment:fixed;
   background-color:black;
   background-size:cover;
   background-repeat:repeat;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
 .container {
+  border: 2px solid #38fc04;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.header {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  min-width: 30%;
-  margin: 0 auto;
+  height: auto;
+  width: auto;
+  border: 1px solid #38fc04;
+  background-color: black;
+  position: relative;
+  font-size: 20px;
   color: white;
-  border: 1vw solid black; 
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-color: #e1dccd0f;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px;
 }
-
-.header {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    height: 85px;
-    width: 230px;
-    border: 2px solid white;
-    background-color: black;
-    position: relative;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 23px;
-    color: white;
-    font-weight: bold;
-    font-family: "Times";
-    letter-spacing: 3px;
-    text-align: center;
-    padding-bottom: 55px;
-  }
-
-  .info {
+.info {
     background-color: black;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
     color: white;
-    border: 2px solid white;
-    width: 35%;
-    height: 75%;
-    position: relative;
-    top: -1%;
-    left: 25%;
-    font-size: 25px;
-    margin-top: 90px; /* Adjust this value according to the height of the header */
-    overflow: auto;
-  }
-
-  .sideinfo {
-    background-color: black;
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-    border: 2px solid white;
-    width: 20%;
+    border: 1px solid #38fc04;
+    width: auto;
     height: auto;
-    position: relative;
-    top: -75%;
-    left: 65%;
-    font-size: 25px;
+    font-size: 20px;
+    overflow: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.sideinfo {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: 1px solid #38fc04;
+    height: auto;
+    font-size: 20px;
     letter-spacing: 2px;
-    margin-top: 90px; /* Adjust this value according to the height of the header */
-  }
+    padding: 5px;
+    box-sizing: border-box;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  height: 50px;
+  border-bottom: 1px solid #38fc04;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  cursor: pointer;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(0, 0, 0);
+  border: 0.1px solid #38fc04;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 1px solid #38fc04;
+}
+.dropdown-content a {
+  float: none;
+  color: white;
+  background-color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: black;
+  border: 0.1px solid #38fc04;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+details {
+    margin: 10px 0;
+    text-align: left;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #38fc04;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #38fc04;
+    margin: 10px 0;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
