@@ -1,5 +1,5 @@
 html {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
 }
 
@@ -58,7 +58,7 @@ th {
 }
 
 .table {
-  border: 1px solid white;
+  border: 2px solid #38fc04;
   width: auto; /* Adjust the width as needed */
   max-width: 1500px; /* Set a maximum width for the table */
   border-collapse: collapse;
@@ -87,9 +87,9 @@ th {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  height: 57px;
-  width: 950px;
-  border: 2px solid white;
+  height: 60px;
+  width: 400px;
+  border: 2px solid #38fc04;
   position: absolute;
   top: 2%;
   left: 50%;
