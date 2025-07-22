@@ -38,11 +38,11 @@ body {
 }
 
 a:visited {
-  color: #00cc00;
+  color: #38fc04;
 }
 
 a {
-  color: #00cc00;
+  color: #38fc04;
 }
 
 th, td {
@@ -54,6 +54,7 @@ th {
   position: sticky;
   top: 0;
   background-color: black;
+  color: #38fc04;
   z-index: 1;
 }
 
@@ -66,7 +67,7 @@ th {
   position: relative; /* Change to relative to make it stay within the container */
   text-align: left;
   margin-top: 100px;
-  height:1100px;
+  height:800px;
   overflow:auto;
 }
 
