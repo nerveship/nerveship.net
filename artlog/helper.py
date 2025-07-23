@@ -43,7 +43,7 @@ def write_to_html():
     html_string = f"{format_html()}\n"
 
    
-    data.insert(41, html_string)
+    data.insert(43, html_string)
 
    
     with open(html_file, 'w', encoding="utf8") as file:
