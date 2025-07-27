@@ -15,8 +15,8 @@ def format_html(answers):
     base_indent = " " * 3  
     base_offset = " " * 15  
 
-    tr_indent = base_offset + (base_indent * 1)  
-    td_indent = base_offset + (base_indent * 2)  
+    tr_indent = base_offset  
+    td_indent = base_offset + base_indent  
 
     final_string = f"{tr_indent}<tr>\n"
     total_answers = len(answers)
@@ -29,6 +29,7 @@ def format_html(answers):
 
     final_string += f"{tr_indent}</tr>"
     return final_string
+
 
 
 def format_tweet():
@@ -45,7 +46,7 @@ def write_to_html():
     
     html_string = f"{format_html(answers)}\n"
 
-    data.insert(33, html_string)
+    data.insert(35, html_string)
 
     with open(html_file, 'w', encoding="utf8") as file:
         file.writelines(data)
