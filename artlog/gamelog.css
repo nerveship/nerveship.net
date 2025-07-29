@@ -28,6 +28,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.disclaimer {
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+}
+
 
 .table-container {
   width: auto;
@@ -142,9 +148,15 @@ th {
   color: white;
   min-width: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
+  z-index: 500000;
   border: 1px solid #38fc04;
+  font-size: 0.75em;
 }
+
+.dropdown-text {
+  padding-left: 2%;
+}
+
 
 .dropdown-content a {
   float: none;
