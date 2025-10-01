@@ -34,7 +34,15 @@ def format_html(answers):
 
 def format_tweet():
     print("-------------")
-    article = "An" if answers[0].lower() in ['anime', 'album'] else "A"
+    
+    article = "" 
+    if answers[0].lower() in ['anime', 'album']:
+        article = "An"
+    elif answers[0].lower() in ['Music']:
+        article = ""
+    else:
+        article = "A"
+
     print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5])
     print("https://www.nerveship.net/artlog/")
 
