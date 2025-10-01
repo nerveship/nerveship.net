@@ -34,11 +34,11 @@ def format_html(answers):
 
 def format_tweet():
     print("-------------")
-    
+
     article = "" 
     if answers[0].lower() in ['anime', 'album']:
         article = "An"
-    elif answers[0].lower() in ['Music']:
+    elif answers[0].lower() in ['music']:
         article = ""
     else:
         article = "A"
