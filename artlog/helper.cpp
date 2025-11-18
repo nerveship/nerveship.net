@@ -26,6 +26,4 @@ int main()
     std::cout << "</tr>\n";
 
     std::cout << "---------------------";
-    if (Answers[0].is_lower())
-
 }
