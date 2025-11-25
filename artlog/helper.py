@@ -47,7 +47,7 @@ def format_tweet():
     print("https://www.nerveship.net/artlog/")
 
 def write_to_html():
-    html_file = "artlog\\index.html"  
+    html_file = "artlog/index.html"  
 
     with open(html_file, 'r', encoding="utf8") as file:
         data = file.readlines()
