@@ -30,8 +30,6 @@ def format_html(answers):
     final_string += f"{tr_indent}</tr>"
     return final_string
 
-
-
 def format_tweet():
     print("-------------")
 
