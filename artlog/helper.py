@@ -52,6 +52,17 @@ def write_to_html():
     
     html_string = f"{format_html(answers)}\n"
 
+    # The insert point will be used to put it into the right table
+    insert_point = 0
+    if answers[0].lower() == "film":
+        insert_point = 0
+    elif answers[0].lower() == "game":
+        insert_point = 0
+    elif answers[0].lower() == "literature":
+        insert_point = 0
+    elif answers[0].lower() == "music":
+        insert_point = 0
+
     data.insert(49, html_string)
 
     with open(html_file, 'w', encoding="utf8") as file:
