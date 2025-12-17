@@ -1,0 +1,3 @@
+function openTable(tableName) {
+    
+}
