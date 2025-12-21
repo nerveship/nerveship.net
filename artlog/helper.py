@@ -66,6 +66,9 @@ def write_to_html():
     elif answers[0].lower() == "music":
         insert_point = 0
 
+    # See, the insert point will be where the 49 is, but I hate html so I havent 
+    # Went and edited the page yet to support multiple tables
+    # And hiding and showing them. Fuck HTML and CSS man I hate it. 
     data.insert(49, html_string)
 
     with open(html_file, 'w', encoding="utf8") as file:
