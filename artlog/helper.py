@@ -12,6 +12,7 @@ def get_input(array):
         answers.append(answer)
 
 def format_html(answers):
+    # This is for the funny indent stuff, it kind of looks like shit but. 
     base_indent = " " * 3  
     base_offset = " " * 15  
 
@@ -53,6 +54,8 @@ def write_to_html():
     html_string = f"{format_html(answers)}\n"
 
     # The insert point will be used to put it into the right table
+    # For when I can be bothered to seperate them into different tables
+    # I just can't be fucked changing this yet, because it is a mess.
     insert_point = 0
     if answers[0].lower() == "film":
         insert_point = 0
