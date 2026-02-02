@@ -41,7 +41,7 @@ def format_tweet():
         article = ""
     else:
         article = "A"
-
+    #
     print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5])
     print("https://www.nerveship.net/artlog/")
 
