@@ -76,7 +76,6 @@ def write_to_html():
     
     print("html string written to " + str(html_file))
 
-
 get_input(categories)
 format_html(answers)
 format_tweet()  
