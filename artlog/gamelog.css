@@ -64,7 +64,8 @@ th {
   position: sticky;
   top: 0;
   background-color: black;
-  color: #38fc04;
+  border: 2px dashed #38fc04;
+  color: #ffffff;
   z-index: 1;
 }
 
@@ -72,8 +73,8 @@ th {
 .table {
   border-collapse: collapse;
   border: 2px solid #38fc04;
-  width: auto; /* Adjust the width as needed */
-  max-width: 1500px; /* Set a maximum width for the table */
+  width: auto; 
+  max-width: 1500px; 
   color: white;
   position: relative; /* Change to relative to make it stay within the container */
   text-align: left;
@@ -107,6 +108,7 @@ th {
   background-color: black;
   height: 50px;
   display: flex; justify-content: center; align-items: center;
+  padding-bottom: 10px;
 }
 
 /* dropdown */
@@ -123,6 +125,7 @@ th {
 .dropdown {
   float: left;
   overflow: hidden;
+  border: 2px solid #38fc04;
 }
 
 .dropdown .dropbtn {
