@@ -16,9 +16,9 @@ def get_input(array):
 
         # Lazy shit that just lets me automatically format the date if it 
         # was today or yesterday, rather than typing it out 
-        if i == "Completion" and answer.strip().lower() == "tday":
+        if i == "Completion" and answer.strip().lower() == "t":
             answer = today.strftime("%B %#d, %Y")
-        elif i == "Completion" and answer.strip().lower() == "yday":
+        elif i == "Completion" and answer.strip().lower() == "y":
             answer = yesterday.strftime("%B %#d, %Y")
         answers.append(answer)
 
