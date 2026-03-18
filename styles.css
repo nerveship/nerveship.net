@@ -22,6 +22,7 @@ body {
   margin: auto;
   margin-top: 100px;
   height: auto;
+  width: auto;
 }
 
 .inner {
@@ -31,9 +32,11 @@ body {
 }
 
 .header {
-  height: 60px;
   font-size: 1.65em;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #38fc04;
+  display: inline-block;
+  padding: 4px 8px;
 }
 
 .landing {
@@ -60,7 +63,8 @@ marquee {
 .navbar {
   overflow: hidden;
   background-color: black;
-  height: 50px;
+  border: 1px solid #38fc04;
+  display: inline-block;
 }
 
 /* dropdown */
@@ -122,4 +126,24 @@ marquee {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.scrolling-text {
+  border: 1px solid #38fc04;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom-text {
+  border: 1px solid #38fc04;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block; /* shrinks to fit the text width */
+  padding: 4px 8px;
+}
+
+.scrolling-text,
+.header,
+.navbar,
+.Landing,
+.bottom-text {
+  margin-bottom: 5px;
 }
