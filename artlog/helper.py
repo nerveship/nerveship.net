@@ -1,4 +1,5 @@
 import os
+from datetime import date, timedelta
 
 #init vars
 categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
@@ -6,9 +7,19 @@ answers = []
 
 #gets input for each category and adds it to answers
 def get_input(array):
+    today = date.today()
+    yesterday = today - timedelta(days=1)
+
     for i in array:
         title = i + ": "
         answer = input(title)
+
+        # Lazy shit that just lets me automatically format the date if it 
+        # was today or yesterday, rather than typing it out 
+        if i == "Completion" and answer.strip().lower() == "tday":
+            answer = today.strftime("%B %#d, %Y")
+        elif i == "Completion" and answer.strip().lower() == "yday":
+            answer = yesterday.strftime("%B %#d, %Y")
         answers.append(answer)
 
 def format_html(answers):
