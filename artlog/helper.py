@@ -1,5 +1,5 @@
 import os
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 #init vars
 categories = ["Type", "Title", "Creator", "Release", "Completion", "Rating"] 
@@ -20,6 +20,10 @@ def get_input(array):
             answer = today.strftime("%B %#d, %Y")
         elif i == "Completion" and answer.strip().lower() == "y":
             answer = yesterday.strftime("%B %#d, %Y")
+        
+        if i == "Release":
+            parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
+            answer = parsed.strftime("%B %#d, %Y")
         answers.append(answer)
 
 def format_html(answers):
