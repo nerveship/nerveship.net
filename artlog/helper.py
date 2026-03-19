@@ -16,11 +16,12 @@ def get_input(array):
 
         # Lazy shit that just lets me automatically format the date if it 
         # was today or yesterday, rather than typing it out 
-        if i == "Completion" and answer.strip().lower() == "t":
+        if i == "Completion" and answer.strip().lower() == "tday":
             answer = today.strftime("%B %#d, %Y")
-        elif i == "Completion" and answer.strip().lower() == "y":
+        elif i == "Completion" and answer.strip().lower() == "yday":
             answer = yesterday.strftime("%B %#d, %Y")
         
+        # Takes the 04/02/75 formatted date and puts it into words
         if i == "Release":
             parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
             answer = parsed.strftime("%B %#d, %Y")
