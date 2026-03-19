@@ -23,8 +23,11 @@ def get_input(array):
         
         # Takes the 04/02/75 formatted date and puts it into words
         if i == "Release":
-            parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
-            answer = parsed.strftime("%B %#d, %Y")
+            try:
+                parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
+                answer = parsed.strftime("%B %#d, %Y")
+            except ValueError:
+                print("Couldn't parse date, keeping as-is:", answer)
         answers.append(answer)
 
 def format_html(answers):
