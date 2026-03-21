@@ -35,7 +35,7 @@ def get_input(array):
                 # This stops it putting in 2060. It hasn't fucking happened yet.
                 if parsed.year > date.today().year:
                     parsed = parsed.replace(year=parsed.year-100)
-                    
+
                 answer = parsed.strftime("%B %#d, %Y")
             except ValueError:
                 print("Couldn't parse date, keeping as-is:", answer)
@@ -77,7 +77,7 @@ def format_tweet():
     else:
         article = "A"
     #
-    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5])
+    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5] + "/5")
     print("https://www.nerveship.net/artlog/")
 
 def write_to_html():
