@@ -32,9 +32,18 @@ def get_input(array):
         if i == "Release":
             try:
                 parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
+                # This stops it putting in 2060. It hasn't fucking happened yet.
+                if parsed.year > date.today().year:
+                    parsed = parsed.replace(year=parsed.year-100)
+                    
                 answer = parsed.strftime("%B %#d, %Y")
             except ValueError:
                 print("Couldn't parse date, keeping as-is:", answer)
+        
+        # Automatically formats the star rating
+        if i == "Rating:":
+            answer = answer.strip() + "/5"
+
         answers.append(answer)
 
 def format_html(answers):
