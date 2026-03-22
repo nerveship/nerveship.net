@@ -23,7 +23,7 @@ def get_input(array):
                 answer = yesterday.strftime("%B %#d, %Y")
             else:
                 try:
-                    parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
+                    parsed = datetime.strptime(answer.strip(), "%d/%m/%Y")
                     answer = parsed.strftime("%B %#d, %Y")
                 except ValueError:
                     print("Couldn't parse date, keeping as-is:", answer)
@@ -31,7 +31,7 @@ def get_input(array):
         # Takes the 04/02/75 formatted date and puts it into words
         if i == "Release":
             try:
-                parsed = datetime.strptime(answer.strip(), "%d/%m/%y")
+                parsed = datetime.strptime(answer.strip(), "%d/%m/%Y")
                 # This stops it putting in 2060. It hasn't fucking happened yet.
                 if parsed.year > date.today().year:
                     parsed = parsed.replace(year=parsed.year-100)
@@ -41,8 +41,10 @@ def get_input(array):
                 print("Couldn't parse date, keeping as-is:", answer)
         
         # Automatically formats the star rating
-        if i == "Rating:":
-            answer = answer.strip() + "/5"
+        if i == "Rating":
+            complete = answer.strip() + "/5"
+
+            answer = complete
 
         answers.append(answer)
 
