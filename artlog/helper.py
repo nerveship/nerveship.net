@@ -71,16 +71,25 @@ def format_html(answers):
 def format_tweet():
     print("-------------")
 
+    # Makes it more natural sounding depending on the type
     article = "" 
-    if answers[0].lower() in ['anime', 'album']:
+
+    art_type = ""
+
+    if answers[0].lower() in ['anime', 'music']:
         article = "An"
-    elif answers[0].lower() in ['music']:
-        article = ""
     else:
         article = "A"
     
+    # Asks what type of music it is before continuing
+    if answers[0].lower() in ['music']:
+        print("What type of musical release?")
+        art_type = input()
+    else:
+        art_type = answers[0]
+    
     # Prints the tweet out
-    print(answers[1] + " - " + article + " " + answers[0].lower()  + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5] + "/5")
+    print(answers[1] + " - " + article + " " + art_type + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5] + "/5")
     print("https://www.nerveship.net/artlog/")
 
 def write_to_html():
