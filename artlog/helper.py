@@ -89,8 +89,10 @@ def format_tweet():
         art_type = answers[0]
     
     # Prints the tweet out
-    print(answers[1] + " - " + article + " " + art_type + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5] + "/5")
+    print(answers[1] + " - " + article + " " + art_type + " by " + answers[2] + ", released in " + answers[3][-4:] + "." + "\nRating: " + answers[5])
     print("https://www.nerveship.net/artlog/")
+
+    print("-------------")
 
 def write_to_html():
     html_file = "artlog\index.html" 
