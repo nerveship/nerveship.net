@@ -88,7 +88,7 @@ th {
   border: 2px solid #38fc04;
   width: auto; 
   max-width: 1500px; 
-  color: #cccccc;
+  color: white;
   position: relative; /* Change to relative to make it stay within the container */
   text-align: left;
   height:800px;
