@@ -192,3 +192,12 @@ th {
   display: block;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .table {
+    height: auto;
+    max-height: 80vh;
+  }
+}
