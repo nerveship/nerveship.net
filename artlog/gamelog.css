@@ -74,7 +74,7 @@ th {
   position: sticky;
   top: 0;
   background-color: black;
-  border: 2px dashed #38fc04;
+  border: 2px solid #38fc04;
   color: #ffffff;
   z-index: 1;
   font-weight: 500;
