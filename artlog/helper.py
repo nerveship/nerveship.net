@@ -18,13 +18,13 @@ def get_input(array):
         # was today or yesterday, rather than typing it out 
         if i == "Completion":
             if answer.strip().lower() == "tday":
-                answer = today.strftime("%B %#d, %Y")
+                answer = today.strftime("%b %#d, %Y")
             elif answer.strip().lower() == "yday":
-                answer = yesterday.strftime("%B %#d, %Y")
+                answer = yesterday.strftime("%b %#d, %Y")
             else:
                 try:
                     parsed = datetime.strptime(answer.strip(), "%d/%m/%Y")
-                    answer = parsed.strftime("%B %#d, %Y")
+                    answer = parsed.strftime("%b %#d, %Y")
                 except ValueError:
                     print("Couldn't parse date, keeping as-is:", answer)
         
@@ -36,7 +36,7 @@ def get_input(array):
                 if parsed.year > date.today().year:
                     parsed = parsed.replace(year=parsed.year-100)
 
-                answer = parsed.strftime("%B %#d, %Y")
+                answer = parsed.strftime("%b %#d, %Y")
             except ValueError:
                 print("Couldn't parse date, keeping as-is:", answer)
         
