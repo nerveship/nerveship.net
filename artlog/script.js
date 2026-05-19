@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const value = parseFloat(el.textContent);
         if (value < 2.5) {
             el.style.color = '#ff4d4d';
-        } else if (value < 4) {
+        } else if (value < 3.5) {
             el.style.color = 'orange';
         }
         else {
