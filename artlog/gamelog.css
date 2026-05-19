@@ -15,7 +15,7 @@ body {
 
 .alnright { 
   text-align: center;
-  padding-right: 2%; /* stupid */
+  padding-right: 0%; /* stupid */
 }
 
 td:last-child, th:last-child {
