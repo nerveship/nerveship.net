@@ -7,7 +7,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
 }
 
 body {
@@ -27,13 +28,11 @@ body {
 
 .inner {
   width: 97%;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: auto
 }
 
 .header {
   font-size: 1.65em;
-  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #38fc04;
   display: inline-block;
   padding: 4px 8px;
@@ -130,12 +129,11 @@ marquee {
 
 .scrolling-text {
   border: 1px solid #38fc04;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .bottom-text {
   border: 1px solid #38fc04;
-  font-family: Arial, Helvetica, sans-serif;
+
   display: inline-block; /* shrinks to fit the text width */
   padding: 4px 8px;
 }
