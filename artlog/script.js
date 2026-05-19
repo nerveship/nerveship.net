@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Short Film': '#4d9ff7', 
         'Literature': '#f7a84d',  
         'Game':       '#4df77a',  
-        'Anime':      '#f74d8a',  
+        'Anime':      '#f74d8a',
+        'Manga':      '#f74dbd'
     };
 
     rows.forEach(row => {
