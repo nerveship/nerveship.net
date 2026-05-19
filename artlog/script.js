@@ -18,12 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Type colours
     const rows = document.querySelectorAll('table tbody tr');
     const typeColors = {
-        'Music':      '#b44ff7',  // purple
-        'Film':       '#4d9ff7',  // blue
-        'Short Film': '#4d9ff7',  // blue (same as film)
-        'Literature': '#f7a84d',  // amber
-        'Game':       '#4df77a',  // green
-        'Anime':      '#f74d8a',  // pink/rose
+        'Music':      '#b44ff7', 
+        'Musical':    '#d44ff7', 
+        'Film':       '#4d9ff7',  
+        'Short Film': '#4d9ff7', 
+        'Literature': '#f7a84d',  
+        'Game':       '#4df77a',  
+        'Anime':      '#f74d8a',  
     };
 
     rows.forEach(row => {
