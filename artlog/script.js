@@ -38,3 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// // Buttons for hiding types
+// function filterType(type) {
+//     const rows = document.querySelectorAll('table tbody tr');
+//     rows.forEach(row => {
+//         if (!row.cells[0]) return;
+//         const rowType = row.cells[0].textContent.trim();
+//         if (type === 'all') {
+//             row.style.display = '';
+//         } else if (type === 'Film') {
+//             row.style.display = (rowType === 'Film' || rowType === 'Short Film') ? '' : 'none';
+//         } else if (type === 'Music') {
+//             row.style.display = (rowType === 'Music' || rowType === 'Musical') ? '' : 'none';
+//         } else {
+//             row.style.display = rowType === type ? '' : 'none';
+//         }
+//     });
+// }
