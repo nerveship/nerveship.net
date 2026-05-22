@@ -14,23 +14,23 @@ body {
 }
 
 /* Cool filter button CSS */
-/* .filter-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 0;
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 0;
 }
 
 .filter-buttons button {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8em;
-    color: white;
-    background-color: black;
-    border: 2px solid #38fc04;
-    padding: 6px 14px;
-    cursor: pointer;
-    letter-spacing: 0.08em;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8em;
+  color: white;
+  background-color: black;
+  border: 2px solid #38fc04;
+  padding: 6px 14px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
 }
 
 .filter-buttons button:hover {
@@ -40,7 +40,7 @@ body {
 .filter-buttons button.active {
     background-color: rgba(56, 252, 4, 0.25);
     color: #38fc04;
-} */
+}
 
 .alnright { 
   text-align: center;
@@ -150,7 +150,7 @@ th {
   background-color: black;
   height: 60px;
   display: flex; justify-content: center; align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 /* dropdown */
