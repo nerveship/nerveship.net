@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // Buttons for hiding types
 function filterType(type) {
     const rows = document.querySelectorAll('table tbody tr');
