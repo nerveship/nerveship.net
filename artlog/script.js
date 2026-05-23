@@ -61,6 +61,12 @@ function filterType(type) {
             } else {
                 row.style.display = 'none';
             }
+        } else if (type === 'Animanga') {
+            if (rowType === 'Anime' || rowType === 'Manga') {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
         } else {
             if (rowType === type) {
                 row.style.display = '';
