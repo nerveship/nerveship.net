@@ -7,7 +7,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
 }
 
 body {
@@ -22,42 +23,27 @@ body {
   margin: auto;
   margin-top: 100px;
   height: auto;
+  width: auto;
 }
 
 .inner {
   width: 97%;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  margin: auto
 }
 
-/*test*/
-
 .header {
-  height: 60px;
   font-size: 1.65em;
-  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #38fc04;
+  display: inline-block;
+  padding: 4px 8px;
 }
 
 .landing {
-  margin: 0 auto;
-  font-weight: bold;
-  font-family: "arial";
-  text-align: center;
-  position: relative;
-  letter-spacing: 0.1em;
-  font-size: 1vw;
-  top: 10%;
-  color: black;
-  overflow: hidden;
-}
-
-a {
   height: auto;
   font-size: 1.65em;
   color: white;
   width: 50%;
-  text-align: center;
+  border: 1px solid #38fc04;
 }
 
 p {
@@ -77,7 +63,8 @@ marquee {
 .navbar {
   overflow: hidden;
   background-color: black;
-  height: 50px;
+  border: 1px solid #38fc04;
+  display: inline-block;
 }
 
 /* dropdown */
@@ -139,4 +126,31 @@ marquee {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.Landing a {
+  color: white;
+}
+
+.Landing {
+  text-align: center;
+}
+
+.scrolling-text {
+  border: 1px solid #38fc04;
+}
+
+.bottom-text {
+  border: 1px solid #38fc04;
+
+  display: inline-block; /* shrinks to fit the text width */
+  padding: 4px 8px;
+}
+
+.scrolling-text,
+.header,
+.navbar,
+.Landing,
+.bottom-text {
+  margin-bottom: 5px;
 }

@@ -17,7 +17,8 @@ while i < len(data):
             title = data[i+2].replace('<td>', '').replace('</td>', '').strip()
             creator = data[i+3].replace('<td>', '').replace('</td>', '').strip()
             year = data[i+4].replace('<td>', '').replace('</td>', '').strip().split()[-1]
-            results.append(f"{title} by {creator}, ({year})")
+            rating = data[i+6].replace('<td class="alnright">', '').replace('</td>', '').strip()
+            #results.append(f"{title} by {creator}, ({year}).\nRated {rating}.\n")
     i += 1
 
 for entry in results[:n]:
