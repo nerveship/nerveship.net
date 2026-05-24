@@ -101,23 +101,13 @@ def write_to_html():
     
     html_string = f"{format_html(answers)}\n"
 
-    # The insert point will be used to put it into the right table
-    # For when I can be bothered to seperate them into different tables
-    # I just can't be fucked changing this yet, because it is a mess.
-    insert_point = 0
-    if answers[0].lower() == "film":
-        insert_point = 0
-    elif answers[0].lower() == "game":
-        insert_point = 0
-    elif answers[0].lower() == "literature":
-        insert_point = 0
-    elif answers[0].lower() == "music":
-        insert_point = 0
+    entry_point = None
+    for i, line in enumerate(data):
+        if '<!--Insert table record under here -->' in line:
+            entry_point = i + 1
+            break
 
-    # See, the insert point will be where the 49 is, but I hate html so I havent 
-    # Went and edited the page yet to support multiple tables
-    # And hiding and showing them. Fuck HTML and CSS man I hate it. 
-    data.insert(54, html_string)
+    data.insert(entry_point, html_string)
 
     with open(html_file, 'w', encoding="utf8") as file:
         file.writelines(data)
