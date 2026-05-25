@@ -15,10 +15,10 @@ while i < len(data):
         if next_line.startswith('<td>') and next_line.endswith('</td>'):
             entry_type = next_line.replace('<td>', '').replace('</td>', '').strip()
             title = data[i+2].replace('<td>', '').replace('</td>', '').strip()
-            creator = data[i+3].replace('<td>', '').replace('</td>', '').strip()
+            creator = data[i+3].replace('<td>', '').replace('</td>', '').replace('<br>', ' & ').replace('</br>', '').strip()
             year = data[i+4].replace('<td>', '').replace('</td>', '').strip().split()[-1]
-            rating = data[i+6].replace('<td class="alnright">', '').replace('</td>', '').strip()
-            #results.append(f"{title} by {creator}, ({year}).\nRated {rating}.\n")
+            #rating = data[i+6].replace('<td class="alnright">', '').replace('</td>', '').strip()
+            results.append(f"{title} by {creator}, ({year}).")
     i += 1
 
 for entry in results[:n]:
