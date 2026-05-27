@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Music':      '#b44ff7', 
         'Musical':    '#d44ff7', 
         'Film':       '#4d9ff7',  
-        'Short Film': '#4d9ff7', 
+        'Short Film': '#00beff',
+        'Documentary': '#00d7ea',
         'Literature': '#f7a84d',  
         'Game':       '#4df77a',  
         'Anime':      '#f74d8a',
@@ -50,7 +51,7 @@ function filterType(type) {
         if (type === 'all') {
             row.style.display = '';
         } else if (type === 'Film') {
-            if (rowType === 'Film' || rowType === 'Short Film') {
+            if (rowType === 'Film' || rowType === 'Short Film' || rowType === 'Documentary') {
                 row.style.display = '';
             } else {
                 row.style.display = 'none';
