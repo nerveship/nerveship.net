@@ -10,7 +10,6 @@ i = 0
 while i < len(data):
     line = data[i].strip()
     if line.startswith('<tr>'):
-        # check if the next line is a plain <td>something</td> (the type column)
         next_line = data[i+1].strip() if i+1 < len(data) else ''
         if next_line.startswith('<td>') and next_line.endswith('</td>'):
             entry_type = next_line.replace('<td>', '').replace('</td>', '').strip()
@@ -21,6 +20,6 @@ while i < len(data):
             results.append(f"{title} by {creator}, ({year}). Rated {rating}.")
     i += 1
 
-for entry in results[:n]:
+for entry in results[:n][::-1]:
     print(entry)
 print("<https://www.nerveship.net/artlog/>")
