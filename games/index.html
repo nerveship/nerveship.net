@@ -1,72 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>nerveship.net - games</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="games.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../green_spiral_favi.webp">
+  <link rel="stylesheet" href="games.css">
 </head>
 <body>
   <div class="container">
+    <div class="scrolling-text">
+      <marquee behavior="scroll" direction="left" scrollamount="15">An overview of the video games I have developed.</marquee>
+    </div>
+    <div class="inner">
 
-    <div class="navbar">
+      <div class="header">
+        Games I have released
+      </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">Return</button>
-        <div class="dropdown-content">
-          <a href="/">Home</a>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Main</button>
+          <div class="dropdown-content">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Art</button>
+          <div class="dropdown-content">
+            <a href="/games">Games</a>
+            <a href="/artlog">Artlog</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Writing</button>
+          <div class="dropdown-content">
+            <a href="https://blog.nerveship.net/">Blog</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Community</button>
+          <div class="dropdown-content">
+            <a href="/friends">Friends</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Archive</button>
+          <div class="dropdown-content">
+            <a href="/archive/homepages">Homepages</a>
+          </div>
         </div>
       </div>
 
+      <div class="info">
+        <details>
+          <summary>Mail Gunner Carnst — February 20, 2026</summary>
+          <img src="https://img.itch.zone/aW1nLzI1Njk0OTAwLnBuZw==/original/MuOOWC.png" alt="Mail Gunner Carnst">
+          <p>As a new worker for the St. Carnst postal service, you arrive for your first shift.</p>
+          <p><i>"Yeah so, the autonomous mail system has been infected."</i></p>
+          <p><i>"By like... a virus?"</i></p>
+          <p><i>"Yeah, but not a computer virus."</i></p>
+          <p><i>"It's some sort of plant. We've been instructed to blast it away before handing the packages over."</i></p>
+          <p><i>"No clue what happens if we miss any, or, god forbid, miss all of them."</i></p>
+          <p>Save St. Carnst from the plant menace!</p><br>
+          <a href="https://nerveship.itch.io/mail-gunner-carnst" target="_blank">play it on itch.io</a>
+        </details>
+        <details>
+          <summary>Care(taking) — April 22, 2025</summary>
+          <img src="https://img.itch.zone/aW1nLzIwODQ3MzAwLnBuZw==/original/vBiNi2.png" alt="Care(taking)">
+          <p>A short experimental game created in 12 days.</p>
+          <p>You are the caretaker of a graveyard at world's end. Each day, five spirits show at a random grave on the plot. Only two may be freed from this world.</p>
+          <p>Your choices in this world do not matter.</p><br>
+          <a href="https://nerveship.itch.io/caretaking" target="_blank">play it on itch.io</a>
+        </details>
+      </div>
+
+      <div class="sideinfo">
+        <details>
+          <summary>Tools I Use</summary>
+          <a href="https://godotengine.org/" target="_blank"><b>Godot</b> — Game Engine</a><br><br>
+          <a href="https://www.gimp.org/" target="_blank"><b>GIMP</b> — Image Editor</a><br><br>
+          <a href="https://www.reaper.fm/" target="_blank"><b>REAPER</b> — Digital Audio Workstation</a><br><br>
+          <a href="https://www.aseprite.org/" target="_blank"><b>Aseprite</b> — Pixel Art</a><br><br>
+          <a href="https://www.blender.org/" target="_blank"><b>Blender</b> — 3D Modelling/Animation</a><br><br>
+          <a href="https://kdenlive.org/" target="_blank"><b>Kdenlive</b> — Video Editor</a><br><br>
+          <a href="https://obsproject.com/" target="_blank"><b>OBS</b> — Video Capture</a><br><br>
+          <a href="https://handbrake.fr/" target="_blank"><b>HandBrake</b> — Video Compression</a><br><br>
+          <a href="https://ffmpeg.org/" target="_blank"><b>FFmpeg</b> — Quick Video Editing</a><br><br>
+        </details>
+      </div>
 
     </div>
-
-    <div class="header">
-      Here you can find out more about the games I have released
-    </div>
-
-    <div class="info">
-      <details>
-        <summary>Mail Gunner Carnst - February 20, 2026</summary>
-        <img width="70%" src="https://img.itch.zone/aW1nLzI1Njk0OTAwLnBuZw==/original/MuOOWC.png"><br><br>
-        As a new worker for the St. Carnst postal service, you arrive for your first shift.<br><br>
-        <i>"Yeah so, the autonomous mail system has been infected."</i><br><br>
-        <i>"By like... a virus?"</i><br><br>
-        <i>"Yeah, but not a computer virus."</i><br><br>
-        <i>"It's some sort of plant. We've been instructed to blast it away before handing the packages over."</i><br><br>
-        <i>"No clue what happens if we miss any, or, god forbid, miss all of them."</i><br><br>
-        Save St. Carnst from the plant menace!<br><br>
-        <a href="https://nerveship.itch.io/mail-gunner-carnst" target="_blank">You can play it here</a>
-      </details>
-      <details>
-        <summary>Care(taking) - April 22, 2025</summary>
-        <img width="70%" src="https://img.itch.zone/aW1nLzIwODQ3MzAwLnBuZw==/original/vBiNi2.png"><br><br>
-        A short experimental game created in 12 days.<br><br>
-        You are the caretaker of a graveyard at world's end. Each day, five spirits show at a random grave on the plot. Only two may be freed from this world.<br><br>
-        Your choices in this world do not matter.<br><br>
-        <a href="https://nerveship.itch.io/caretaking" target="_blank">You can play it here</a>
-      </details>
-    </div>
-
-    <div class="sideinfo">
-      <details>
-        <summary>Tools I use</summary>
-        <a href="https://godotengine.org/" target="_blank"><b>Godot</b> - Game Engine</a><br>
-        <a href="https://www.gimp.org/" target="_blank"><b>GIMP</b> - Image Editor</a><br>
-        <a href="https://www.reaper.fm/" target="_blank"><b>REAPER</b> - Digital Audio Workstation</a><br>
-        <a href="https://www.aseprite.org/" target="_blank"><b>Aseprite</b> - Pixel Art</a><br>
-        <a href="https://www.blender.org/" target="_blank"><b>Blender</b> - 3D Modelling/Animation</a><br>
-        <a href="https://www.vegascreativesoftware.com/gb/vegas-pro/" target="_blank"><b>VEGAS PRO</b> - Video Editor</a><br>
-        <a href="https://obsproject.com/" target="_blank"><b>OBS</b> - Video Capture</a><br>
-        <a href="https://handbrake.fr/" target="_blank"><b>HandBrake</b> - Video Compression</a><br>
-        <a href="https://ffmpeg.org/" target="_blank"><b>FFmpeg</b> - Quick Video Editing</a><br>
-        <a href="https://www.literatureandlatte.com/scrivener/overview" target="_blank"><b>Scrivener</b> - Word Processing</a><br>
-      </details>
-    </div>
-
   </div>
 </body>
 </html>
