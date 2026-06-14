@@ -1,32 +1,21 @@
 /*Base*/
 
+/* Just changing the font across the whole page */
 html {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 20px;
 }
 
+/* Adds bg colour and stuff for the page*/
 body {
   font-family: 'IBM Plex Mono', monospace;
-  background-position: center;
-  background-attachment: fixed;
   background-color: black;
-  background-size: cover;
-  background-repeat: repeat;
-  overflow-x: hidden;
-}
-
-a {
-  color: #38fc04;
-}
-
-a:visited {
-  color: #38fc04;
 }
 
 /*Scrollbar*/
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: #00cc00;
 }
 
@@ -39,35 +28,13 @@ a:visited {
 }
 
 /*Layout / Misc */
-.alnright {
+/* .alnright {
   text-align: center;
-  padding-right: 0%; /* stupid */
-}
+  padding-right: 0%; /* stupid 
+} */
 
-.disclaimer {
-  color: white;
-  text-align: center;
-  font-size: 0.7em;
-}
-
-.return {
-  color: white;
-  font-size: 25px;
-  margin-top: 55px;
-  margin-left: 550px;
-}
-
-#info-box {
-  position: absolute;
-  top: 10px; /* Adjust based on your table's position */
-  left: 300px; /* Adjust based on your layout */
-  width: 200px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 /*Filter buttons*/
-
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -97,7 +64,6 @@ a:visited {
 }
 
 /*Navbar / Dropdown*/
-
 .navbar {
   overflow: hidden;
   background-color: black;
@@ -130,14 +96,13 @@ a:visited {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 0.8em;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
 }
 
 .dropdown-content {
