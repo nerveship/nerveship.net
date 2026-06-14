@@ -13,7 +13,6 @@ body {
 }
 
 /*Scrollbar*/
-
 ::-webkit-scrollbar {
   width: 5px;
   background-color: #00cc00;
@@ -27,20 +26,20 @@ body {
   background-color: #66ff99;
 }
 
+/* IDK if there's any point in this but I'll leave it here just in case*/
 /*Layout / Misc */
 /* .alnright {
   text-align: center;
   padding-right: 0%; /* stupid 
 } */
 
-
 /*Filter buttons*/
 .filter-buttons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 6px;
-  padding: 12px 0;
+  padding-bottom: 12px;
+  padding-top: 6px;
 }
 
 .filter-buttons button {
@@ -110,21 +109,9 @@ body {
   position: absolute;
   background-color: #000000;
   color: white;
-  min-width: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 500000;
   border: 1px solid #38fc04;
   font-size: 0.75em;
-}
-
-.dropdown-content a {
-  float: none;
-  color: white;
-  background-color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -140,7 +127,6 @@ body {
 }
 
 /*Table*/
-
 .table-container {
   width: auto;
   overflow-x: auto;
@@ -150,12 +136,10 @@ body {
 }
 
 .table {
-  border-collapse: collapse;
   border: 2px solid #38fc04;
   width: auto;
-  max-width: 1500px;
-  color: white;
-  position: relative; 
+  max-width: 74%;
+  color: white; /* Text colour */
   text-align: left;
   height: 800px;
   overflow: auto;
@@ -169,24 +153,24 @@ table {
 
 th, td {
   padding: 4px 10px;
-  position: sticky;
 }
 
 th {
-  position: sticky;
-  top: 0;
-  background-color: black;
+  position: sticky; /* Keeps the categories at the top*/
+  top: 0; /* This keeps it at the top too */
+  background-color: black; /* Makes it so you cant see the text thru the box */
   border: 2px solid #38fc04;
   color: #ffffff;
-  z-index: 1;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 2px;
 }
 
+/* Puts the borders around the table cells */
 td {
   border: 1px solid #38fc04;
 }
 
+/* Centers the rating colum cause it's weird otherwise */
 td:last-child,
 th:last-child {
   padding: 4px 6px;
@@ -206,8 +190,7 @@ th:nth-child(4) { width: 5%; }
 th:nth-child(5) { width: 5%; }
 th:nth-child(6) { width: 2%; }
 
-/*Responsive*/
-
+/* Responsive mobile stuff who gives a fuck */
 @media (max-width: 768px) {
   html { font-size: 13px; }
   table { table-layout: auto; }
