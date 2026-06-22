@@ -1,0 +1,571 @@
+/* Fonts */
+@import url(https://fonts.bunny.net/css?family=dm-sans:400,400i,700,700i|libre-caslon-text:400,400i);
+
+/* Variables */
+:root {
+  /* Fonts */
+  --font-main: 'Libre Caslon Text', serif;
+  --font-secondary: 'DM Sans', sans-serif;
+  --font-monospace: monospace;
+  /* Font sizes */
+  --font-size-h1: 2rem; /* 32px */
+  --font-size-h2: 1.75rem; /* 28px */
+  --font-size-h3: 1.5rem; /* 24px */
+  --font-size-h4: 1.375rem; /* 22px */
+  --font-size-h5: 1.25rem; /* 20px */
+  --font-size-h6: 1.125rem; /* 18px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-sm: 0.875rem; /* 14px */
+  /* Other */
+  --border-radius: 0.25rem;
+  --letter-spacing: -0.05em;
+  --width: 720px; /* rem requires workaround */
+  --transition-duration: 0.2s;
+  /* Colors */
+  --background-color: hsla(1 100% 0% / 1);
+  --accent-color: #38fc04; /* Lc 75, 85% lightness for Lc 90 */
+  --text-color: hsla(1 100% 100% / 1);
+  /* Other colors */
+  --link-color: var(--accent-color);
+  --visited-color: hsl(from var(--accent-color) h s calc(l - 30));
+  --code-background-color: var(--accent-color);
+  --code-color: var(--background-color);
+  --blockquote-color: var(--accent-color);
+  --heading-color: var(--text-color);
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Page styles */
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-body);
+  text-align: left;
+  background-color: var(--background-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  color: var(--text-color);
+  max-width: var(--width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Owl selector */
+:is(header, main, footer) * + * {
+  margin-top: 1.5rem;
+}
+nav,
+main h1:first-of-type,
+:is(ul, ol, p) * + * {
+  margin-top: 0;
+}
+
+/* Side padding */
+header, main, footer {
+  padding-inline: 1.125rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 1.5rem;
+}
+strong, b {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+/* Font sizes */
+h1     { font-size: var(--font-size-h1); }
+h2     { font-size: var(--font-size-h2); }
+h3     { font-size: var(--font-size-h3); }
+h4     { font-size: var(--font-size-h4); }
+h5     { font-size: var(--font-size-h5); }
+h6     { font-size: var(--font-size-h6); }
+main p { font-size: var(--font-size-body); }
+small  { font-size: var(--font-size-sm); }
+
+/* Header */
+header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+/* Title */
+.title h1 { 
+  font-size: var(--font-size-h4);
+  margin: 0;
+  color: var(--link-color);
+}
+
+/* Nav */
+nav :not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+/* Main */
+main > p:last-of-type {
+  /* text-align: center; */
+}
+
+/* Footer */
+footer {
+  padding-block: 2rem !important;
+  display: flex;
+  justify-content: space-between;
+  & > span {
+    /* margin-left: 1.125rem; */
+  }
+  &::before {
+    /* margin-left: 1.125rem; */
+    content: "With lots";
+  }
+  &::after {
+    /* margin-right: 1.125rem; */
+    content: "of love.";
+  }
+}
+
+/* Pseudo-elements */
+::selection {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+::target-text {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* Links besides title */
+a {
+  color: var(--link-color);
+  cursor: pointer;
+  background: linear-gradient(to left, var(--background-color) 50%, var(--link-color) 50%);
+  background-size: 225% 100%;
+  background-position: right bottom;
+  transition: all var(--transition-duration) ease;
+  border-radius: var(--border-radius);
+  padding: 0.125em;
+  text-decoration: underline solid .125rem;
+  text-underline-offset: 0.125em;
+  &:not(.title):hover {
+    color: var(--background-color);
+    background-position: left bottom;
+  }
+}
+
+/* Title link */
+a.title {
+  display: inline-flex;
+  align-items: baseline;
+  background: linear-gradient(to left, var(--background-color) 50%, var(--link-color) 50%);
+  background-size: 225% 100%;
+  background-position: right bottom;
+  transition: all var(--transition-duration) ease;
+  border-radius: var(--border-radius);
+  margin: 0 0 0 -0.125em;
+  padding: 0.125em;
+  text-decoration: none;
+  &:hover {
+    color: var(--background-color);
+    background-position: left bottom;
+  }
+  &:hover h1 {
+    color: var(--background-color);
+    background-position: left bottom;
+  }
+  &:hover .bear {
+    color: var(--background-color);
+    background-position: left bottom;
+  }
+}
+
+/* Focused element outlines for tabbing navigation */
+:focus-visible {
+  outline: .125rem solid var(--accent-color);
+  z-index: 2;
+}
+:not(a):focus-visible {
+  outline-offset: .125rem;
+}
+a:focus-visible {
+  outline: .125rem solid var(--accent-color);
+  z-index: 2;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* External link icon */
+a[href]:not(:where(
+  /* Exclude hash only links */
+  [href^="#"],
+  /* Exclude javascript only links */
+  [href^="javascript:" i],
+  /* Exclude relative but not double slash only links */
+  [href^="/"]:not([href^="//"]),
+  /* Excluded domains and/or subdomains: add/remove as needed
+   * For use with the dashboard, replace with "//bearblog.dev"
+   * For use with your website, replace with your domain name
+   */
+  [href*="//imperfect.bearblog.dev"],
+))::after {
+  content: "↗";
+}
+
+/* Buttons */
+button {
+  margin: 0;
+  cursor: pointer;
+  padding: 0.5em;
+  background: linear-gradient(to left, var(--background-color) 50%, var(--text-color) 50%);
+  transition: all var(--transition-duration) ease;
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  background-size: 225% 100%;
+  background-position: right bottom;
+  border: 0.125rem solid var(--text-color);
+  font-size: var(--font-size-sm);
+  &:hover {
+    color: var(--background-color) !important; /* important needed for .upvote-button */
+    background-position: left bottom;
+  }
+  &:not(:last-child) {
+    margin-right: .5rem;
+  }
+}
+
+/* Inline code blocks */
+code {
+  font-family: monospace;
+  padding: .125rem;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: var(--border-radius);
+  &::selection, &::target-text {
+    background-color: var(--code-color);
+    color: var(--code-background-color);
+  }
+}
+
+/* Highlight code blocks */
+highlight {
+  border-radius: var(--border-radius);
+}
+/* Prevent horizontal scroll for multi-line code blocks */
+.highlight pre {
+  white-space: break-spaces;
+}
+.highlight {
+  padding: .0625rem 1rem;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  border-radius: var(--border-radius);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  overflow-x: auto;
+  ::selection, ::target-text {
+    background-color: var(--code-color);
+    color: var(--code-background-color);
+  }
+  & span {
+    color: var(--code-color);
+  }
+}
+
+/* Miscellaneous elements */
+time {
+  font-family: var(--font-monospace);
+  font-style: normal;
+  font-size: var(--font-size-sm);
+}
+hr {
+  border: 0;
+  border-top: .125rem dotted var(--accent-color);
+}
+img {
+  max-width: 100%;
+}
+blockquote {
+  border-left: 0.5em solid var(--blockquote-color);
+  padding-left: 1rem;
+  margin-inline: 0;
+  font-style: italic;
+}
+mark {
+  background-color: var(--accent-color);
+}
+/* Input accent colors */
+input:is([type="checkbox"], [type="radio"]) {
+  accent-color: var(--accent-color);
+}
+/* Legends for fieldsets */
+legend {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: var(--border-radius);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+/* Sticky headers without border-collapse issue */
+thead {
+  position: sticky;
+  top: 0;
+}
+table th {
+  /* Header cell borders besides left */
+  border-top: .0625rem solid var(--accent-color);
+  border-bottom: .0625rem solid var(--accent-color);
+  border-right: .0625rem solid var(--accent-color);
+}
+table td {
+  /* Lateral cell borders */
+  border-bottom: .0625rem solid var(--accent-color);
+  border-right: .0625rem solid var(--accent-color);
+}
+table :is(th,td):first-child {
+  /* Left border for first <td> or <th> in a row */
+  border-left: .0625rem solid var(--accent-color);
+}
+table thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+th::selection, th::target-text {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+}
+thead th, tfoot:is(th, td), td {
+  padding: 0.5em;
+}
+
+/* Lists */
+/* Flush list items that aren't blog posts */
+main ol, ul:not(.blog-posts) {
+  list-style-position: outside;
+}
+/* List bullet and number font styles */
+:is(ol, ul) > li::marker {
+  font-weight: 700;
+  font-family: var(--font-monospace);
+  font-size: var(--font-size-sm);
+}
+
+/* Blog post list */
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+/* Reversed row with centered leader line */
+ul.blog-posts li {
+  display: flex;
+  flex-direction: row-reverse;
+  white-space: nowrap;
+  /* nested css */
+  &::before {
+    border-bottom: 0.125rem dotted color-mix(in srgb, var(--text-color), var(--background-color) 50%);
+    content: "";
+    flex-grow: 1;
+    height: 0.8em;
+    order: 0;
+    margin: 0.125em 1em 0;
+    /* padding-right: 1em; */
+  }
+  & span {
+    order: -1;
+  }
+  /* Ellipsis text overflow */
+  & a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Upvote form */
+/* Center upvote form */
+#upvote-form {
+  display: flex !important;
+}
+#upvote-form > small {
+  margin: 0 auto;
+}
+/* Upvote button */
+button.upvote-button {
+  & svg {
+    display: none;
+  }
+  &::before {
+    content: "🌱";
+    cursor: pointer;
+  }
+  &:hover::before {
+    content: "🌿";
+    cursor: pointer;
+  }
+  &::after {
+    content: "\00a0toasts";
+    cursor: pointer;
+    font-family: var(--font-secondary);
+  }
+  font-size: var(--font-size-body);
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  margin-top: 0; /* was 2em */
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+  border: 0.125rem solid var(--text-color);
+}
+/* Upvote button after own post published or clicking it */
+button.upvote-button[disabled] {
+  font-size: var(--font-size-body);
+  font-family: var(--font-secondary);
+  color: var(--background-color) !important;
+  background: var(--text-color) !important;
+  border-color: var(--text-color);
+  cursor: not-allowed;
+  &::before {
+    content: "🌿 ";
+    cursor: not-allowed;
+  }
+  &::after {
+    content: "\00a0toasts\00a0(Thanks!)";
+  }
+}
+/* Upvote count */
+.upvote-count {
+  font-size: var(--font-size-body);
+  font-family: var(--font-secondary);
+  margin-left: 0.5em;
+  /* Owl exception for upvote count button */
+  margin-top: 0 !important;
+}
+
+/* Code highlighting */
+.highlight .c { font-style: italic } /* Comment */
+.highlight .err { border: 1px solid var(--background-color) } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .ch { font-style: italic } /* Comment.Hashbang */
+.highlight .cm { font-style: italic } /* Comment.Multiline */
+.highlight .cpf { font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { font-style: italic } /* Comment.Single */
+.highlight .cs { font-style: italic } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.highlight .gh { font-weight: bold } /* Generic.Heading */
+.highlight .gp { font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { font-weight: bold } /* Generic.Subheading */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { font-weight: bold } /* Keyword.Namespace */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .s { font-style: italic } /* Literal.String */
+.highlight .nc { font-weight: bold } /* Name.Class */
+.highlight .ni { font-weight: bold } /* Name.Entity */
+.highlight .ne { font-weight: bold } /* Name.Exception */
+.highlight .nn { font-weight: bold } /* Name.Namespace */
+.highlight .nt { font-weight: bold } /* Name.Tag */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .sa { font-style: italic } /* Literal.String.Affix */
+.highlight .sb { font-style: italic } /* Literal.String.Backtick */
+.highlight .sc { font-style: italic } /* Literal.String.Char */
+.highlight .dl { font-style: italic } /* Literal.String.Delimiter */
+.highlight .sd { font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { font-style: italic } /* Literal.String.Double */
+.highlight .se { font-weight: bold; font-style: italic } /* Literal.String.Escape */
+.highlight .sh { font-style: italic } /* Literal.String.Heredoc */
+.highlight .si { font-weight: bold; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { font-style: italic } /* Literal.String.Other */
+.highlight .sr { font-style: italic } /* Literal.String.Regex */
+.highlight .s1 { font-style: italic } /* Literal.String.Single */
+.highlight .ss { font-style: italic } /* Literal.String.Symbol */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Nav beside title */
+  nav p {
+    margin: 0;
+  }
+  /* Nav below title */
+  /*
+   * header {
+   *   flex-direction: column;
+   *   align-items: center;
+   *   padding-top: 1.125rem;
+   *   margin-right: 0;
+   * }
+   * nav {
+   *   margin: 0;
+   *   max-width: 100%;
+   * }
+   */
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    & > span, &::after {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+/* Reduced Motion (Apple) */
+@media screen and (prefers-reduced-motion: reduce) { 
+  transition-duration: 0.001ms !important;
+}
+/* Print styles */
+@media print {
+body {
+  color: #000;
+  background: #fff;
+}
+a,
+main a {
+  color: #000;
+  text-decoration: none;
+}
+blockquote,
+code {
+  margin: 0;
+  padding: 0 1.5em;
+  background: #fff;
+  border: none;
+}
+nav,
+footer,
+.tags,
+.upvote-button {
+  display: none !important;
+}
+}

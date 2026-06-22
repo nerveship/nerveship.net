@@ -151,6 +151,8 @@ table {
   width: 100%;
 }
 
+
+
 th, td {
   padding: 4px 10px;
 }
@@ -161,8 +163,8 @@ th {
   background-color: black; /* Makes it so you cant see the text thru the box */
   border: 2px solid #38fc04;
   color: #ffffff;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: bold;
+
 }
 
 /* Puts the borders around the table cells */
