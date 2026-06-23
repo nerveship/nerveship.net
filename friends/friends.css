@@ -94,9 +94,14 @@ marquee {
   margin: 0;
 }
 
+.navbar a,
+.dropdown .dropbtn {
+  border: 1px solid transparent;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(0, 0, 0);
-  border: 0.1px solid #38fc04;
+  border: 1px solid #38fc04;
 }
 
 .dropdown-content {

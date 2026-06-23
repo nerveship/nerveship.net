@@ -76,9 +76,14 @@ p {
   margin: 0;
   cursor: pointer;
 }
+.navbar a,
+.dropdown .dropbtn {
+  border: 1px solid transparent;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: black;
-  border: 0.1px solid #38fc04;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #38fc04;
 }
 .dropdown-content {
   display: none;
