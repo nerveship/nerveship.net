@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Film':       '#4d9ff7',  
         'Short Film': '#00beff',
         'Documentary': '#00d7ea',
-        'Short Story': '#fa9a2d',  
-        'Novel': '#f69220',  
+        'Short Story': '#ff8700',  
+        'Novel': '#ff0000',  
         'Game':       '#4df77a',  
         'Anime':      '#f74d8a',
         'Manga':      '#f74dbd'
