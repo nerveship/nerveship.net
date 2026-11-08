@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>ARTLOG</title>
-   <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="gamelog.css">
-   <script src="script.js"></script>
-   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-   <link rel="icon" type="image/x-icon" href="../green_spiral_favi.webp">
+   <link rel="icon" type="image/webp" href="/green_spiral_favi.webp">
+   <script src="script.js" defer></script>
 </head>
 <body>
    <div class="navbar">
@@ -29,24 +27,24 @@
       </div>
    </div>
    <div class="filter-buttons">
-      <button onclick="filterType('all')">All</button>
-      <button onclick="filterType('Film')">Film</button>
-      <button onclick="filterType('Game')">Game</button>
-      <button onclick="filterType('Music')">Music</button>
-      <button onclick="filterType('Animanga')">Animanga</button>
-      <button onclick="filterType('Literature')">Literature</button>
+      <button class="active" onclick="filterType('all', this)">All</button>
+      <button onclick="filterType('Film', this)">Film</button>
+      <button onclick="filterType('Game', this)">Game</button>
+      <button onclick="filterType('Music', this)">Music</button>
+      <button onclick="filterType('Animanga', this)">Animanga</button>
+      <button onclick="filterType('Literature', this)">Literature</button>
    </div>
    <div class="table-container">
       <div class="table">
-         <table id="myTable" class="center">
+         <table id="myTable">
             <thead>
                <tr>
-                  <th width="2%">Type</th>
-                  <th width="10%">Title</th>
-                  <th width="5%">Creator</th>
-                  <th width="5%">Release</th>
-                  <th width="5%">Completion</th>
-                  <th width="1%">Rating</th>
+                  <th>Type</th>
+                  <th>Title</th>
+                  <th>Creator</th>
+                  <th>Release</th>
+                  <th>Completion</th>
+                  <th>Rating</th>
                </tr>
             </thead>
             <tbody>

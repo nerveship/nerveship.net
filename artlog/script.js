@@ -1,86 +1,61 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Rating Colours
-    const ratings = document.querySelectorAll('.alnright');
-
-    ratings.forEach(el => {
+    // Rating colours
+    document.querySelectorAll('.alnright').forEach(el => {
         const value = parseFloat(el.textContent);
+        if (isNaN(value)) return; // e.g. "?/?" stays white
+
         if (value < 2.5) {
             el.style.color = '#ff4d4d';
         } else if (value < 3.5) {
             el.style.color = 'orange';
-        }
-        else {
-            
+        } else {
             el.style.color = '#38fc04';
         }
     });
 
     // Type colours
-    const rows = document.querySelectorAll('table tbody tr');
     const typeColors = {
-        'Music':      '#b44ff7', 
-        'Musical':    '#d44ff7', 
-        'Film':       '#4d9ff7',  
-        'Short Film': '#00beff',
+        'Music':       '#b44ff7',
+        'Musical':     '#d44ff7',
+        'Film':        '#4d9ff7',
+        'Short Film':  '#00beff',
         'Documentary': '#00d7ea',
-        'Short Story': '#ff8700',  
-        'Novel': '#ff0000',  
-        'Game':       '#4df77a',  
-        'Anime':      '#f74d8a',
-        'Manga':      '#f74dbd'
+        'Short Story': '#ff8700',
+        'Novel':       '#ff0000',
+        'Game':        '#4df77a',
+        'Anime':       '#f74d8a',
+        'Manga':       '#f74dbd'
     };
 
-    rows.forEach(row => {
-        if (!row.cells[0]) return;
+    document.querySelectorAll('table tbody tr').forEach(row => {
         const firstCell = row.cells[0];
+        if (!firstCell) return;
         const type = firstCell.textContent.trim();
-        
         if (typeColors[type]) {
             firstCell.style.color = typeColors[type];
         }
     });
 });
 
-// Buttons for hiding types
-function filterType(type) {
-    const rows = document.querySelectorAll('table tbody tr');
+// Which row types each filter button shows
+const filterGroups = {
+    Film:       ['Film', 'Short Film', 'Documentary'],
+    Music:      ['Music', 'Musical'],
+    Animanga:   ['Anime', 'Manga'],
+    Literature: ['Novel', 'Short Story', 'Poem']
+};
 
-    rows.forEach(row => {
+// Buttons for hiding types
+function filterType(type, btn) {
+    const allowed = filterGroups[type] || [type];
+
+    document.querySelectorAll('table tbody tr').forEach(row => {
         if (!row.cells[0]) return;
         const rowType = row.cells[0].textContent.trim();
+        row.style.display = (type === 'all' || allowed.includes(rowType)) ? '' : 'none';
+    });
 
-        if (type === 'all') {
-            row.style.display = '';
-        } else if (type === 'Film') {
-            if (rowType === 'Film' || rowType === 'Short Film' || rowType === 'Documentary') {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        } else if (type === 'Music') {
-            if (rowType === 'Music' || rowType === 'Musical') {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        } else if (type === 'Animanga') {
-            if (rowType === 'Anime' || rowType === 'Manga') {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        } else if (type === 'Literature'){
-            if (rowType === 'Novel' || rowType === 'Short Story' || rowType === 'Poem') {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        } else {
-            if (rowType === type) {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        }
+    document.querySelectorAll('.filter-buttons button').forEach(b => {
+        b.classList.toggle('active', b === btn);
     });
 }
