@@ -156,7 +156,6 @@ td {
   border: 1px solid #38fc04;
 }
 
-/* Centers the rating colum cause it's weird otherwise */
 td:last-child,
 th:last-child {
   padding: 4px 6px;
