@@ -130,6 +130,14 @@ marquee {
   margin-bottom: 5px;
 }
 
+.landing a {
+  color: white;
+}
+
+.friend-links {
+  text-align: center;
+}
+
 /* phones */
 @media (max-width: 600px) {
   .container {
