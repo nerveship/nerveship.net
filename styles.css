@@ -38,13 +38,6 @@ body {
   padding: 4px 8px;
 }
 
-.landing {
-  height: auto;
-  font-size: 1.65em;
-  color: white;
-  width: 50%;
-}
-
 p {
   color: white;
   font-size: 1em;
@@ -68,23 +61,14 @@ marquee {
 
 /* dropdown */
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
+  font-size: 1.333rem; /* 16px */
+  border: 1px solid transparent;
   outline: none;
   color: white;
   padding: 14px 16px;
@@ -93,42 +77,37 @@ marquee {
   margin: 0;
 }
 
-.navbar a,
-.dropdown .dropbtn {
-  border: 1px solid transparent;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid #38fc04;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #000000;
   color: white;
   min-width: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border: 1px solid #38fc04;
 }
 
 .dropdown-content a {
-  float: none;
+  display: block;
+  font-size: 1.333rem; /* 16px */
   color: white;
   background-color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
   text-align: left;
+  border: 1px solid transparent;
 }
 
-.dropdown-content a:hover {
-  background-color: black;
+/* hover + keyboard focus */
+.dropdown:hover .dropbtn,
+.dropdown:focus-within .dropbtn,
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  border: 1px solid #38fc04;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
@@ -146,7 +125,23 @@ marquee {
 .scrolling-text,
 .header,
 .navbar,
-.Landing,
+.landing,
 .bottom-text {
   margin-bottom: 5px;
+}
+
+/* phones */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px 8px 0;
+  }
+
+  .header {
+    font-size: 1em;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 1.167rem; /* 14px */
+    padding: 10px 6px;
+  }
 }
