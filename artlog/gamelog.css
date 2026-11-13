@@ -1,4 +1,5 @@
 /*Base*/
+
 /* Just changing the font across the whole page */
 html {
   font-family: 'IBM Plex Mono', monospace;
@@ -132,7 +133,7 @@ body {
 }
 
 table {
-  table-layout: auto;
+  table-layout: fixed;
   width: 100%;
 }
 
@@ -145,8 +146,13 @@ th:nth-child(4), td:nth-child(4),
 th:nth-child(5), td:nth-child(5),
 th:nth-child(6), td:nth-child(6) {
   white-space: nowrap;
-  width: 1%;
 }
+
+th:nth-child(1) { width: 11ch; }
+th:nth-child(3) { width: 20ch; }
+th:nth-child(4) { width: 15ch; }
+th:nth-child(5) { width: 13ch; }
+th:nth-child(6) { width: 6ch; }
 
 th {
   position: sticky; /* Keeps the categories at the top*/
