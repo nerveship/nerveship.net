@@ -1,5 +1,4 @@
 /*Base*/
-
 /* Just changing the font across the whole page */
 html {
   font-family: 'IBM Plex Mono', monospace;
@@ -125,21 +124,28 @@ body {
 
 .table {
   border: 2px solid #38fc04;
-  max-width: 74%;
+  width: 74%;
   color: white; /* Text colour */
   text-align: left;
   height: 800px;
   overflow: auto;
 }
 
-/*This keeps the table at the same width even if you change*/
 table {
-  table-layout: fixed;
+  table-layout: auto;
   width: 100%;
 }
 
 th, td {
   padding: 4px 10px;
+}
+
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4),
+th:nth-child(5), td:nth-child(5),
+th:nth-child(6), td:nth-child(6) {
+  white-space: nowrap;
+  width: 1%;
 }
 
 th {
@@ -172,19 +178,10 @@ tr:hover td {
   background-color: rgba(56, 252, 4, 0.15);
 }
 
-/* Column widths */
-th:nth-child(1) { width: 3%; }
-th:nth-child(2) { width: 10%; }
-th:nth-child(3) { width: 5%; }
-th:nth-child(4) { width: 5%; }
-th:nth-child(5) { width: 5%; }
-th:nth-child(6) { width: 2%; }
-
 /* Responsive mobile stuff who gives a fuck */
 @media (max-width: 768px) {
   html { font-size: 13px; }
-  table { table-layout: auto; }
-  .table { height: auto; max-height: 80vh; max-width: 100%; }
+  .table { height: auto; max-height: 80vh; width: 100%; }
 
   th:nth-child(3) { display: none; } /* Creator */
   th:nth-child(4) { display: none; } /* Release */
