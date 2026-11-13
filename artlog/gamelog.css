@@ -54,7 +54,7 @@ body {
 
 .filter-buttons button.active {
   background-color: rgba(56, 252, 4, 0.25);
-  color: #38fc04;
+  color: white;
 }
 
 /*Navbar / Dropdown*/
