@@ -125,16 +125,18 @@ body {
 
 .table {
   border: 2px solid #38fc04;
-  width: 74%;
+  width: fit-content;
+  max-width: 100%;
   color: white; /* Text colour */
   text-align: left;
   height: 800px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
 
 table {
   table-layout: fixed;
-  width: 100%;
+  width: 106ch;
 }
 
 th, td {
@@ -149,10 +151,11 @@ th:nth-child(6), td:nth-child(6) {
 }
 
 th:nth-child(1) { width: 11ch; }
+th:nth-child(2) { width: 30ch; }
 th:nth-child(3) { width: 20ch; }
 th:nth-child(4) { width: 15ch; }
 th:nth-child(5) { width: 13ch; }
-th:nth-child(6) { width: 6ch; }
+th:nth-child(6) { width: 7ch; }
 
 th {
   position: sticky; /* Keeps the categories at the top*/
@@ -187,6 +190,7 @@ tr:hover td {
 /* Responsive mobile stuff who gives a fuck */
 @media (max-width: 768px) {
   html { font-size: 13px; }
+  table { width: 100%; }
   .table { height: auto; max-height: 80vh; width: 100%; }
 
   th:nth-child(3) { display: none; } /* Creator */
