@@ -1,6 +1,6 @@
 html_file = r"artlog\index.html"
 
-# Mirrors filterGroups on the site
+# Mirror of filter groups
 filter_groups = {
     'Film':       ['Film', 'Short Film', 'Documentary'],
     'Music':      ['Music', 'Musical'],
